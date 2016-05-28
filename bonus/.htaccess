@@ -1,0 +1,16 @@
+AddType application/x-httpd-php .php .htm .html
+AddHandler x-httpd-php  .htm .html 
+
+#<Limit GET POST PUT>
+#order deny,allow
+#deny from all
+#allow from 68.11.34.243
+#</Limit>
+#ErrorDocument 403 /maint.html
+#<Files maint.html>
+#order allow,deny
+#allow from all
+#</Files>
+
+
+

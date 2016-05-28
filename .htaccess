@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^signupandmakemoney.com
+RewriteRule (.*) http://www.signupandmakemoney.com/$1 [R=301,L]

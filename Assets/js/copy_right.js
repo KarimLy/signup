@@ -1,0 +1,1 @@
+document.write('<p>Copyright &copy; 2008 - 2010 Signupandmakemoney.com</p>')

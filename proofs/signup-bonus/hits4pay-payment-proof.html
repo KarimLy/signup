@@ -1,0 +1,33 @@
+<?php
+include('../../includes/settings.php');
+$title = 'Hits4pay proof of payment.';
+$description = 'Hits4pay proof of payment. Sign up with this excellent Company today and get a $5.00 sign up bonus.';
+$keywords = 'hits4pay, proof of payment, payment proof';
+$styles = '../' . STYLE2;
+$favicon = '../' . FAV2;
+$script = '../' . SCRIPT2;
+$footer = 'Sign up with Hits 4 Pay and get a five dollar sign up bonus. See proof of payment above.';
+include('../../includes/header.php');
+?>
+<h1>Hits4pay Payment Proof</h1>
+<p>Sign up with this Hits4pay, a <a href="../../get-paid-to-sites/paid-to-read.html">paid to read e-mail</a> company today and get a <span class="important_money">$5.00 sign up bonus</span>. Hits4pay is 100% free to join with great earning opportunities.</p>
+    <div align="center" class="proof"><table border="1" height="80px"><tr><td><p><img src="../../Assets/finger-pointing-at-proof-of-payment.jpg" align="left" hspace="5" alt="Finger pointing at a payment proof." title="Look at a proof of payment from Hits4pay." width="250" height="57" /></p>
+    </td>
+        <td><p align="center">A  <a href="javascript: hits4payproof()" title="Paypal payment proof I received from Hits4pay for $31.05.">Paypal payment I received from Hits4pay</a> for <span class="important_money">$31.05</span>.</p></td>
+    </tr></table></div>
+    <?php include ('../../includes/notify.php'); ?>
+  <hr />
+<table width="100%" border="0" cellspacing="3" cellpadding="3" summary="Table used for bonus sites and advertising.">
+  <tr>
+    <td class="left_advertising" valign="top" width="<?php echo R ?>%"><?php include ('../../includes/leftsidebar.php'); ?></td>
+    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$5.00</span></p><a href="http://hits4pay.com/members/index.cgi?gdc25" target="_blank" title="Join Hits4pay and get a $5.00 sign up bonus.">Hits 4 Pay</a> = <span class="important_money">$5.00</span> <span class="notes">(<a href="javascript: hits4pay()" title="See comments from others about Hits4pay and add your own." class="comment">Comments</a>.)</span>
+      <p>Total (USD) = <span class="totals">$5.00</span></p><?php include ('../../includes/banner.php'); ?>
+      <p style="padding-top:15px;"><div class="fb-comments" data-href="<?php echo $canonical; ?>" data-num-posts="5" data-width="400"></div></p>
+      </td>
+    <td class="right_advertising" valign="top" width="<?php echo L ?>%"><?php include ('../../includes/rightsidebar.php'); ?></td>
+  </tr>
+</table>
+
+<?php
+	include('../../includes/footer.php');
+?>

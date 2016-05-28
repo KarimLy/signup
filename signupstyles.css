@@ -1,0 +1,236 @@
+@charset "utf-8";
+/* Page Layout */
+#wrapper {
+	position:relative;
+    margin-left: auto;
+    margin-right: auto;
+	width:85%
+}
+.header {
+	padding-bottom: 20px;
+	text-align:center;
+	width:35%;
+}
+#header_right {
+	padding-top:15px;
+	margin-right:-70px;
+	text-align:center;
+	float:right;
+	width:35%;
+	left: 128px;
+	top: 131px;
+}
+.banner_right {
+	text-align:center;
+}
+.left_advertising {
+	line-height: 100%;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-weight: normal;
+	text-align:left;
+}
+.left_advertising a {
+	color: #26a;
+	text-decoration: none
+}
+.left_advertising a:hover {
+	background:#ffc
+}
+.right_advertising {
+	text-align:center;
+}
+.sign_up_sites {
+	padding-bottom: 20px;
+	padding-left:20px;
+	line-height: 150%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal
+}
+.sign_up_sites a {
+	color: #26a;
+	text-decoration: none
+}
+.sign_up_sites a:hover {
+	background:#ffc
+}
+#content {
+	font-size: 95%;
+	font-family: 'Lucida Grande', Sans-Serif;
+	color:#555;
+	line-height: 140%;
+	padding-top:122px;
+	padding-bottom: 20px
+}
+.browserIE7 #content {
+	font-size: 95%;
+	font-family: 'Lucida Grande', Sans-Serif;
+	color:#555;
+	line-height: 140%;
+	padding-top:90px;
+	padding-bottom: 20px
+}
+.browserIE6 #content {
+	font-size: 95%;
+	font-family: 'Lucida Grande', Sans-Serif;
+	color:#555;
+	line-height: 140%;
+	padding-top:90px;
+	padding-bottom: 20px
+}
+#content a {
+	color: #26a;
+	text-decoration: none
+}
+#content a:hover {
+	background:#ffc
+}
+a {
+    color: #26a;
+	text-decoration: none
+}
+a:hover {
+	background:#ffc
+}
+#content ul {
+	list-style:disc;
+	position:static;
+	float:none;
+}
+#content li {
+	padding-left:5px;
+	margin-left:30px;
+	position:static;
+	float:none;
+}
+#footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #26a;
+	font-style: normal;
+	font-weight: normal;
+	text-align:center;
+	border-top:dotted #999999;
+	padding:28px;
+}
+#footer a {
+	color: #26a;
+	text-decoration: none
+}
+#footer a:hover {
+	background:#ffc
+}
+#clear {
+	clear:both
+}
+#you_tube {
+	position:static;
+	float:left;
+	padding-right:35px;
+	padding-bottom:15px;
+	display:block
+}
+
+/* FAQ toggle */
+.faq-answer {
+	display:none;
+	padding-left:52px;
+}
+.ftc {
+    font-size:9px;
+	font-family:"Courier New", Courier, monospace;
+	color:#333333;
+}
+.comment {
+    font-size:9px;
+	color:#0e4b8f;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style:italic;
+}
+/* Text Properties */
+h1 {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Arial, Sans-Serif;
+	font-weight: bold;
+	text-transform:uppercase;
+	font-size: 1.5em;
+	color: #0033CC;
+	display:inline;
+	text-align:center;
+}
+h2 {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Arial, Sans-Serif;
+	font-weight: bold;
+	text-transform:uppercase;
+	font-size: 1.2em;
+	color: #0033CC
+}
+h3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px
+}
+h4 {
+    font-family: 'Trebuchet MS', 'Lucida Grande', Arial, Sans-Serif;
+	text-transform:uppercase;
+	font-size: 16px;
+	color: #0033CC
+}
+.indent {
+    margin-left:15px;
+}
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	text-align:left
+}
+.splash {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Arial, Sans-Serif;
+	font-weight: bold;
+	text-transform:uppercase;
+	line-height:120%;
+	font-size: 28px;
+	color: #0033CC
+}
+.important_money {
+	font-size: 95%; 
+	font-family: 'Lucida Grande', Sans-Serif;
+	color:#666;
+	font-weight: bold
+}
+.title {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-weight: normal
+}
+.steps {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #000000;
+	text-decoration: blink
+}
+.totals {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000000
+}
+.notes {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal
+}
+.signup_links {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal
+}
+.container{width:245px;border:none;margin:0;}
+.hover{position:absolute;display:none;z-index:999;width:245px;height:108px;background:url(Assets/tooltip.png) no-repeat}
+.hover p{margin:1em;text-align:center}
+a img{ border: none; text-decoration:none; background:#ffffff;}
+a:hover img {border: none; text-decoration:none; background:#ffffff;}
