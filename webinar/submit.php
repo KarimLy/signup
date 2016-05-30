@@ -1,6 +1,6 @@
 <?php
 
-// didn't work once uploaded to godaddy but worked on my end..
+// didn't work once uploaded to godaddy but worked on my virtual host
 //if (strtolower(filter_input(INPUT_SERVER, 'HTTP_X_REQUESTED_WITH')) !== 'xmlhttprequest')
 //	exit('<h1>Not a valid Ajax request...</h1>');
 
@@ -17,10 +17,14 @@ if (!empty($_POST)) {
 
 	if ($name == null)
 		$errors['name'] = 'The name field is required';
+	else if ($name == 'Name')
+		$errors['name'] = 'The name field is required';
 	else 
 		$errors['name'] = null;
 
 	if ($email == '')
+		$errors['email'] = 'The email field is required';
+	else if ($email == 'Email')
 		$errors['email'] = 'The email field is required';
 	else if (filter_var($email, FILTER_VALIDATE_EMAIL) === false)
 		$errors['email'] = $email . ' is not a valid email address';
@@ -29,8 +33,10 @@ if (!empty($_POST)) {
 
 	if ($phone == '')
 		$errors['phone'] = 'The phone field is required';
+	else if ($phone == 'Phone')
+		$errors['phone'] = 'The phone field is required';
 	else if (!preg_match('/^\(?[0-9]{3}\)?[-. ]?[0-9]{3}[-. ]?[0-9]{4}$/', $phone))
-		$errors['phone'] = $phone . ' is not in the correct phone number format of: 555-555-5555';
+		$errors['phone'] = $phone . ' is not in the correct phone format';
 	else
 		$errors['phone'] = null;
 
@@ -47,13 +53,10 @@ if (!empty($_POST)) {
 	} else {
 
 		$response['success'] = true;
-		$response['message'] = '<div class="success">The form has been submitted ' . $name . '</div><script>$(".webinar").hide(2000)</script>';
+		$response['message'] = '<div class="success">We will be in contact with you shortly ' 
+		. $name . '</div><script>$(".webinar").hide(2000)</script>';
 
-		//these headers didn't work in godaddy...
-		//$headers = 'MIME-Version: 1.0' . '\r\n';
-		//$headers .= 'Content-type:text/html;charset=UTF-8' . '\r\n';
-		//$headers .= 'From: info@signupandmakemoney.com' . '\r\n';
-
+		//this header works in godaddy....
 		$headers = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 		$headers .= 'From: Admin <info@signupandmakemoney.com>' . "\r\n";
 

@@ -181,46 +181,52 @@ $favicon = '../Assets/transparent.ico';
 </ul>
 
 </div>
-
 </div>
 
 <div align="center">
-
-<br /><br />
-
-<iframe src="http://secretformulawebinar.net/landingpage1.php?user=signupmoney" style="width: 1200px; height: 1450px"></iframe>
-
-<h1>Fill out this form to be contacted about how to get started.</h1>
-
-<!-- Note: form action was: http://secretformulawebinar.net/getcd.php is was: id="mainForm" -->
-
 <div id="loadingDiv"><img src="<?php echo URL ?>Assets/loading.gif" /></div>
 <div class="message"></div>
-
 <form method="POST" action="submit.php" class="webinar">
-
-First Name<br>
-<input type="text" name="fname" value="" id="fname"><br><br>
-<p id="nameError" class="errors"></p>
-Email<br>
-<input type="text" name="email" value="" id="email"><br><br>
-<p id="emailError" class="errors"></p>
-Phone<br>
-<input type="text" name="phone" value="" id="phone"><br><br>
-<p id="phoneError" class="errors"></p>
-
-<!--
-<input type="hidden" name="redirect" value="http://www.signupandmakemoney.com/webinar/thanks.php">
-<input type="hidden" name="group" value="1">
-<input type="hidden" name="id" value="1880">
-<input type="hidden" name="type" value="1">
-<input type="hidden" name="spage" value="htmlcode">
--->
-<input type="submit" name="submit" id="submit" value="Submit">
-
+  <table border="1" class="webinarTable">
+    <tr>
+      <td colspan="4">
+        <h1 class="webinarHeader">Fill out this form to be contacted about how to get started.</h1>
+        <!-- Note: form action was: http://secretformulawebinar.net/getcd.php is was: id="mainForm" -->
+      </td>
+    </tr>
+    <tr>
+      <td width="25%" class="webinarTd">
+        <input type="text" name="fname" value="Name" id="fname" onfocus="if (this.value == 'Name') {this.value = '';}" 
+              onblur="if (this.value == '') {this.value = 'Name';}">
+        <p id="nameError" class="errors"></p>
+      </td>
+      <td width="25%" class="webinarTd">
+        <input type="text" name="email" value="Email" id="email" onfocus="if (this.value == 'Email') {this.value = '';}" 
+              onblur="if (this.value == '') {this.value = 'Email';}">
+        <p id="emailError" class="errors"></p>
+      </td>
+      <td width="25%" class="webinarTd">
+        <input type="text" name="phone" value="Phone" id="phone" onfocus="if (this.value == 'Phone') {this.value = '';}" 
+              onblur="if (this.value == '') {this.value = 'Phone';}">
+        <p id="phoneError" class="errors"></p>
+      </td>
+      <td width="25%">
+        <!-- past form hidden fields...
+        <input type="hidden" name="redirect" value="http://www.signupandmakemoney.com/webinar/thanks.php">
+        <input type="hidden" name="group" value="1">
+        <input type="hidden" name="id" value="1880">
+        <input type="hidden" name="type" value="1">
+        <input type="hidden" name="spage" value="htmlcode">
+        -->
+        <input type="submit" name="submit" id="submit" value="Submit">
+      </td>
+    </tr>
+  </table>
 </form>
+<br><br>
+  <iframe src="http://secretformulawebinar.net/landingpage1.php?user=signupmoney" style="width: 1100px; height: 1350px"></iframe>
 
-   </div>
+</div> 
 
    <br /><br />
 

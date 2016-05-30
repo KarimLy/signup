@@ -195,10 +195,14 @@ div.success {padding: 22px;color: green;background-color: #ddd;border: 1px solid
 
 #loadingDiv {display : block;position: fixed;top: 50%;left: 50%;display:none}
 
-#nameError {margin-top:-10px}
-#emailError {margin-top:-10px}
-#phoneError {margin-top:-10px}
-#fname {padding:3px}
-#email {padding:3px}
-#phone {padding:3px}
+#nameError {margin-top:2px}
+#emailError {margin-top:2px}
+#phoneError {margin-top:2px}
+#fname {padding:3px;margin-top:10px}
+#email {padding:3px;margin-top:10px}
+#phone {padding:3px;margin-top:10px}
+#submit {margin-left:20px}
+.webinarHeader {margin-bottom:-5px;text-align:center}
+.webinarTd {text-align:center;padding:3px}
+.webinarTable {margin-top:5px}
 
