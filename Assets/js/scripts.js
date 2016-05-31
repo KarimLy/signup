@@ -49,6 +49,32 @@ $(document).ready(function(){
     });
 });
 
+// contact ajax submission
+$(document).ready(function(){
+    $('form#contact_us #submit').click(function(form){
+
+        form.preventDefault();
+        $('#robotError').empty();
+        $('#emailError').empty();
+        $('#nameError').empty();
+        var baseUrl = document.location.origin; 
+
+        $.post(baseUrl + '/gdform.php', $('form#contact_us').serialize(), function(data){
+            if (data.success == true)
+                $('div.message').html(data.message);  
+            else {
+
+                if (data.robotError !== null)
+                    $('#robotError').html(data.robotError);
+                if (data.emailError !== null)
+                    $('#emailError').html(data.emailError);
+                if (data.nameError !== null)
+                    $('#nameError').html(data.nameError);
+            }
+        }, 'json'); 
+    });
+});
+
 // Ajax loading gif...
 $(document).ajaxStart(function(){
     $('#loadingDiv').show();

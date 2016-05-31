@@ -1,97 +1,110 @@
-<?php
-include('../includes/settings.php');
-$title = 'Contact Signupandmakemoney.com';
-$description = 'Email us anytime. We will consider signing up under your referral link if we think the site is worth adding to Signupandmakemoney.com.';
-$keywords = 'contact, questions, sign up under you';
-$styles = STYLE2;
-$favicon = FAV2;
-$script = SCRIPT2;
-$footer = 'Contact us if you have any questions or if you have a website with your referral link that you would like to recommend to Signupandmakemoney.com.';
-include('../includes/headerf.php');
-?>
-<h1>Contact</h1>
-<img src="../Assets/contact.jpg" alt="Contact Us." title="Contact us anytime." style="padding-left:15px;" align="right" width="300" height="200" />
-    <p>You can contact us anytime if you have questions about any of the sites on this website by just <span class="important_money">filling out the form</span> below.</p>    
-    <p><span class="important_money">USA Only</span>: <a href="mailto:info@signupandmakemoney.com?subject=I would like a phone call from Signupandmakemoney.com. My name, phone number, and question(s) are included in this e-mail." target="_blank" title="Request a phone call from Signupandmakemoney.com.">Request a phone call from us</a> if you would like to: discuss any of the Companies on this site, have questions about <a href="../traffic/search-engine-optimization.html">search engine optimization</a>, where to find good online training webinars, <a href="../affiliate-tips/advertising/">how to increase traffic to your site</a>, how to build a mailing list, <a href="../affiliate-tips/business-tips/increase-earnings.html">affiliate marketing</a>, paying for advertising. <a href="../affiliate-tips/build-website/">building a website or blog</a>, or anything else related to making money online.</p>
-<p>Another section of this website was made to help aid individuals in their success online. It is an excellent educational resource of things I've learned over the years. You may find it helpful in answering any questions you may have with this site as well. Please visit the <a href="../affiliate-tips/">affiliate tips</a> section.</p><p><script type="text/javascript"><!--
-google_ad_client = "pub-0372492470050030";
-/* 728x15, for main site created 10/30/09 */
-google_ad_slot = "9481187538";
-google_ad_width = 728;
-google_ad_height = 15;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script></p><hr />
-
-<script type="text/javascript">
-function validateForm()
-{
-var x=document.forms["contact_us"]["norobot"].value;
-if (x==null || x=="")
-  {
-  alert("Captcha question must be answered");
-  return false;
-  }
-}
-
-</script>
-
-<div align="center"><form action="../gdform.php" method="post" name="contact_us" target="_parent" id="contact_us" onsubmit="return validateForm()">
-    <input type="hidden" name="subject" value="Form Submission" />
-    <input type="hidden" name="redirect" value="contact/thankyou.html" />
-    <table width="75%" border="0" align="center" cellpadding="3" summary="Table used for contact form.">
-  <tr>
-    <th colspan="2" scope="col"><div align="center">If you have Questions about any of the sites on this website, just fill out this form.</div></th>
-    </tr>
-  <tr>
-    <td width="40%"><p style="color:#FF0000; font-size:16px;"><?php if (isset($_GET['submit'])) {
-     echo "Captcha was incorrect"; } ?></p></td>
-    <td width="60%">&nbsp;</td>
-  </tr>
-  <tr>
-    <td><input name="required" type="hidden" id="required" value="name" />
-                  Name:</td>
-    <td><input name="first_name" type="text" id="first_name" size="40" maxlength="100" value="<?php if (isset($_SESSION['name'])) echo $_SESSION['name']; ?>" /></td>
-  </tr>
-  <tr>
-    <td>
-            <input name="required" type="hidden" id="required" value="email" />
-                  Email:</td>
-    <td><input name="email" type="text" id="email" size="40" maxlength="100" value="<?php if (isset($_SESSION['email'])) echo $_SESSION['email']; ?>" /></td>
-  </tr>
-  <tr>
-    <td>Insert referral links for us to look at here:</td>
-    <td><input name="links" type="text" id="links" size="40" maxlength="500" value="<?php if (isset($_SESSION['links'])) echo $_SESSION['links']; ?>" /></td>
-  </tr>
-  <tr>
-    <td><input name="required" type="hidden" id="required" value="questions" />
-                  Questions/Comments:</td>
-    <td><textarea name="questions" id="questions" cols="50" rows="4"><?php if (isset($_SESSION['questions'])) echo $_SESSION['questions']; ?></textarea></td>
-  </tr>
-  <tr>
-  <tr>
-    <td colspan="2"></td>
-  </tr>
-  
-  <tr>
-    <td>Enter the numbers to the right:</td>
-    <td><img src="../captcha.php" style="padding-bottom:5px;" /><br />
-    <input type="text" name="norobot" /><br /><br />
-</td>
-  </tr>
-  
-  <tr>
-    <td>&nbsp;</td>
-    <td><input type="submit" name="submit" id="submit" value="Submit" /></td>
-  </tr>
-</table>
-</form>
-</div>
-</div>
-
-<?php
-	include('../includes/footer.php');
-    session_destroy();
-?>
+<?php
+
+include('../includes/settings.php');
+
+$title = 'Contact Signupandmakemoney.com';
+$description = 'Email us anytime. We will consider signing up under your referral link if we think the site is worth adding to Signupandmakemoney.com.';
+$keywords = 'contact, questions, sign up under you';
+$styles = STYLE2;
+$favicon = FAV2;
+$script = SCRIPT2;
+$footer = 'Contact us if you have any questions or if you have a website with your referral link that you would like to recommend to Signupandmakemoney.com.';
+
+include('../includes/headerf.php');
+
+?>
+
+<h1>Contact</h1>
+
+<img src="../Assets/contact.jpg" alt="Contact Us." title="Contact us anytime." style="padding-left:15px;" align="right" width="300" height="200" />
+
+    <p>You can contact us anytime if you have questions about any of the sites on this website by just <span class="important_money">filling out the form</span> below.</p>    
+
+    <p><span class="important_money">USA Only</span>: <a href="mailto:info@signupandmakemoney.com?subject=I would like a phone call from Signupandmakemoney.com. My name, phone number, and question(s) are included in this e-mail." target="_blank" title="Request a phone call from Signupandmakemoney.com.">Request a phone call from us</a> if you would like to: discuss any of the Companies on this site, have questions about <a href="../traffic/search-engine-optimization.html">search engine optimization</a>, where to find good online training webinars, <a href="../affiliate-tips/advertising/">how to increase traffic to your site</a>, how to build a mailing list, <a href="../affiliate-tips/business-tips/increase-earnings.html">affiliate marketing</a>, paying for advertising. <a href="../affiliate-tips/build-website/">building a website or blog</a>, or anything else related to making money online.</p>
+
+<p>Another section of this website was made to help aid individuals in their success online. It is an excellent educational resource of things I've learned over the years. You may find it helpful in answering any questions you may have with this site as well. Please visit the <a href="../affiliate-tips/">affiliate tips</a> section.</p>
+<hr />
+
+<!-- Don't need anymore..
+<script type="text/javascript">
+  function validateForm()
+  {
+
+    var x=document.forms["contact_us"]["norobot"].value;
+    if (x==null || x=="")
+    {
+      alert("Captcha question must be answered");
+      return false;
+    }
+  }
+</script>
+-->
+
+<!--onsubmit="return validateForm()"-->
+
+<div align="center">
+<div id="loadingDiv"><img src="<?php echo URL ?>Assets/loading.gif" /></div>
+<div class="message"></div>
+<form action="../gdform.php" method="post" name="contact_us" id="contact_us">
+    <!--<input type="hidden" name="subject" value="Form Submission" />-->
+    <!--<input type="hidden" name="redirect" value="contact/thankyou.html" />-->
+  <table width="75%" border="0" align="center" cellpadding="3" summary="Table used for contact form." style="margin-left:-100px">
+      <tr>
+        <th colspan="2" scope="col">
+          <div align="center">If you have Questions about any of the sites on this website, just fill out this form.</div>
+        </th>
+      </tr>
+      <tr>
+        <td width="40%">&nbsp;</td>
+
+        <td width="60%">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><input name="first_name" type="text" id="first_name" size="40" maxlength="100" value="Name" onfocus="if (this.value == 'Name') {this.value = '';}" 
+              onblur="if (this.value == '') {this.value = 'Name';}" />
+              <p id="nameError" class="errors"></p>
+            </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><input name="email" type="text" id="email" size="40" maxlength="100" value="Email" onfocus="if (this.value == 'Email') {this.value = '';}" 
+              onblur="if (this.value == '') {this.value = 'Email';}" />
+              <p id="emailError" class="errors"></p>
+            </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td style="padding-bottom:10px"><input name="links" type="text" id="links" size="40" maxlength="100" value="Referral links for us to look at" onfocus="if (this.value == 'Referral links for us to look at') {this.value = '';}" 
+              onblur="if (this.value == '') {this.value = 'Referral links for us to look at';}" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><textarea name="questions" id="questions" cols="50" rows="4" placeholder="Questions/Comments" onfocus="if (this.value == 'Questions/Comments') {this.value = '';}" 
+              onblur="if (this.value == '') {this.value = 'Questions/Comments';}"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><img src="../captcha.php" style="padding-bottom:10px;" /><br />
+        <input type="text" name="norobot" id="norobot" value="Enter Captcha" onfocus="if (this.value == 'Enter Captcha') {this.value = '';}" 
+              onblur="if (this.value == '') {this.value = 'Enter Captcha';}" />
+              <p id="robotError" class="errors"></p>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><input type="submit" name="submit" id="submit" value="Send" style="padding:10px;width:200px;margin-left:-2px" /></td>
+      </tr>
+  </table>
+</form>
+</div>
+
+<?php
+
+	include('../includes/footer.php');
+
+?>
+
