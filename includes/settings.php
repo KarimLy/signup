@@ -38,10 +38,7 @@
 		$canonical = URL . 'affiliate-tips/advertising/';	
 
 	if ($canonical == URL . 'affiliate-tips/build-website/index.html')
-		$canonical = URL . 'affiliate-tips/build-website/';	
-
-	if ($canonical == URL . 'affiliate-tips/business-opportunity/index.html')
-		$canonical = URL . 'affiliate-tips/business-opportunity/';	
+		$canonical = URL . 'affiliate-tips/build-website/';
 
 	if ($canonical == URL . 'affiliate-tips/business-tips/index.html')
 		$canonical = URL . 'affiliate-tips/business-tips/';	
@@ -67,4 +64,3 @@
 	
 
 ?>
-
