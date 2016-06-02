@@ -450,11 +450,7 @@ function panthera(){window.open("http://www.signupandmakemoney.com/blog/2009/03/
 
 function freeandpowerful(){window.open("http://www.signupandmakemoney.com/blog/2010/01/free-and-powerful-3-steps-to-a-50-00-sign-up-bonus/#comments","mywindow","menubar=1,resizable=yes,scrollbars=yes,width=1000,height=550,top=60,left=100");}
 
-function monsterbux(){window.open("http://www.signupandmakemoney.com/blog/2009/07/monster-bux-paid-to-click-community-sign-up-bonus/#comments","mywindow","menubar=1,resizable=yes,scrollbars=yes,width=1000,height=550,top=60,left=100");}
-
 function tenbux(){window.open("http://www.signupandmakemoney.com/blog/2009/02/10bux-pays-you-a-5-cent-sign-up-bonus-for-free/#comments","mywindow","menubar=1,resizable=yes,scrollbars=yes,width=1000,height=550,top=60,left=100");}
-
-function points2shop(){window.open("http://www.signupandmakemoney.com/blog/2009/10/earn-cash-back-sign-up-bonus-amazon-points2shop/#comments","mywindow","menubar=1,resizable=yes,scrollbars=yes,width=1000,height=550,top=60,left=100");}
 
 function cashcrate(){window.open("http://www.signupandmakemoney.com/blog/2009/04/cash-crate-gives-sign-up-bonus-after-filling-out-profile/#comments","mywindow","menubar=1,resizable=yes,scrollbars=yes,width=1000,height=550,top=60,left=100");}
 

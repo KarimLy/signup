@@ -4,7 +4,7 @@
 	define('URL', 'http://www.signupandmakemoney.com/');
 
 	// testing
-	//define('URL', 'http://signupandmakemoney/');
+	// define('URL', 'http://signupandmakemoney/');
 
 	define('STYLE1', 'styles.css');
 	define('STYLE2', '../styles.css');
@@ -17,6 +17,11 @@
 	define('M', '50');
 	define('L', '25');
 
+	// referral links used in multiple places 
+	define('PANTHERA', 'http://stats.pantherainteractive.com/signup/4202');
+
+
+	// setup canonical...
 	$page = $_SERVER['PHP_SELF'];
 	$cpage = ltrim($page, '/');
 	$canonical = URL . $cpage;	
@@ -60,7 +65,5 @@
 
 	if ($canonical == URL . 'webinar/index.php')
 		$canonical = URL . 'webinar/';
-
-	
 
 ?>
