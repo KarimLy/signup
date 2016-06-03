@@ -180,6 +180,11 @@ if ( ch_selected < ch_queries.length ) {
 
 <?php
 
+  function format($num)
+  {
+    return number_format((float)$num, 2, '.', '');
+  }
+
   // bonus defaults..
   $getPaidTotals = 0.00; 
   $clickTotals = 0.00; 
@@ -195,108 +200,99 @@ if ( ch_selected < ch_queries.length ) {
   $buxTotals = 0.00;
 
   // affiliate bonuses
-  $signupandmakemoney = 2.00;
-  $domainIt = 50.00;
-  $crocmint = 50.00;
-  $panthera = 150.00;
-  $ultraWebsiteHosting = 5.00;
-  $cashBurners = 50.00;
-  $idevdirect = 25.00;
-  $songsurgeon = 100.00;
-  $guitar1 = 100.00;
-  $highprofits = 20.00;
-  $advertyze = 1.00;
+  $signupandmakemoney = format(2.00);
+  $domainIt = format(50.00);
+  $crocmint = format(50.00);
+  $panthera = format(150.00);
+  $ultraWebsiteHosting = format(5.00);
+  $cashBurners = format(50.00);
+  $idevdirect = format(25.00);
+  $songsurgeon = format(100.00);
+  $guitar1 = format(100.00);
+  $highprofits = format(20.00);
+  $advertyze = format(1.00);
 
-  $affiliateTotals = array_sum(array($signupandmakemoney, $domainIt, $crocmint, $panthera, $ultraWebsiteHosting, $cashBurners, $idevdirect,
-                                     $songsurgeon, $guitar1, $highprofits, $advertyze));
-  $affiliateTotals = number_format((float)$affiliateTotals, 2, '.', '');
+  $affiliateTotals = format(array_sum(array($signupandmakemoney, $domainIt, $crocmint, $panthera, $ultraWebsiteHosting, $cashBurners, $idevdirect,
+                                     $songsurgeon, $guitar1, $highprofits, $advertyze)));
 
   // bank bonuses - none currently...
-  $bankTotals = number_format((float)$bankTotals, 2, '.', '');
+  $bankTotals = format($bankTotals);
 
   // bux bonuses
-  $beanybux = 0.25;
-  $buxify = 5.00;
-  $tenbux = 0.05;
-  $buxjunction = 5.00;
+  $beanybux = format(0.25);
+  $buxify = format(5.00);
+  $tenbux = format(0.05);
+  $buxjunction = format(5.00);
 
-  $buxTotals = floatval(array_sum(array($beanybux, $buxify, $tenbux, $buxjunction)));
-  $buxTotals = number_format((float)$buxTotals, 2, '.', '');
+  $buxTotals = format(floatval(array_sum(array($beanybux, $buxify, $tenbux, $buxjunction))));
 
   // shopping bonuses
-  $ebates = 10.00;
+  $ebates = format(10.00);
 
-  $shoppingTotals = array_sum(array($ebates));
-  $shoppingTotals = number_format((float)$shoppingTotals, 2, '.', '');
+  $shoppingTotals = format(array_sum(array($ebates)));
 
   // fast bonuses
-  $signupandmakemoneyFast = 0.05;
-  $clixsense = 0.05;
-  $easyhits4u = 0.05;
-  $surveySavvy = 0.05;
-  $mammothList = 1.00;
+  $signupandmakemoneyFast = format(0.05);
+  $clixsense = format(0.05);
+  $easyhits4u = format(0.05);
+  $surveySavvy = format(0.05);
+  $mammothList = format(1.00);
 
-  $fastTotals = array_sum(array($signupandmakemoneyFast, $clixsense, $easyhits4u, $surveySavvy, $mammothList));
-  $fastTotals = number_format((float)$fastTotals, 2, '.', '');
+  $fastTotals = format(array_sum(array($signupandmakemoneyFast, $clixsense, $easyhits4u, $surveySavvy, $mammothList)));
 
   // advertising bonuses
-  $bidvertiser = 20.00;
-  $bannersGoMLM = 15.00;
-  $freeSafelistMailer = 10.00;
-  $mySoloTrader = 5.00;
-  $bannersGoMLM = 15.00;
+  $bidvertiser = format(20.00);
+  $bannersGoMLM = format(15.00);
+  $freeSafelistMailer = format(10.00);
+  $mySoloTrader = format(5.00);
+  $bannersGoMLM = format(15.00);
 
-  $advertisingTotals = array_sum(array($bidvertiser, $bannersGoMLM, $freeSafelistMailer, $mySoloTrader));
-  $advertisingTotals = number_format((float)$advertisingTotals, 2, '.', '');
+  $advertisingTotals = format(array_sum(array($bidvertiser, $bannersGoMLM, $freeSafelistMailer, $mySoloTrader)));
 
   // gaming bonuses
   $scratch2cash = 200.00;
 
-  $gamingTotals = array_sum(array($scratch2cash));
-  $gamingTotals = number_format((float)$gamingTotals, 2, '.', '');
+  $gamingTotals = format(array_sum(array($scratch2cash)));
 
   // get paid to bonuses
-  $inboxDollars = 5.00;
-  $sendEarnings = 5.00;
-  $uniqueRewards = 5.00;
-  $cashCrate = 1.00;
-  $squishyCash = 3.00;
-  $treasureTrooper = 1.00;
-  $getPaidToTry = 25.00;
-  $sunshineRewards = 5.00;
+  $inboxDollars = format(5.00);
+  $sendEarnings = format(5.00);
+  $uniqueRewards = format(5.00);
+  $cashCrate = format(1.00);
+  $squishyCash = format(3.00);
+  $treasureTrooper = format(1.00);
+  $getPaidToTry = format(25.00);
+  $sunshineRewards = format(5.00);
 
-  $getPaidTotals = array_sum(array($inboxDollars, $sendEarnings, $uniqueRewards, $cashCrate, $squishyCash, $treasureTrooper, $getPaidToTry, $sunshineRewards));
-  $getPaidTotals = number_format((float)$getPaidTotals, 2, '.', '');
+  $getPaidTotals = format(array_sum(array($inboxDollars, $sendEarnings, $uniqueRewards, $cashCrate, $squishyCash, $treasureTrooper, $getPaidToTry, 
+                                          $sunshineRewards)));
 
   // investment bonuses - none
-  $investmentTotals = number_format((float)$investmentTotals, 2, '.', '');
+  $investmentTotals = format($investmentTotals);
 
   // social bonuses - none
-  $socialTotals = number_format((float)$socialTotals, 2, '.', '');
+  $socialTotals = format($socialTotals);
 
   // survey bonuses
-  $yourFreeSurveys = 4.00;
-  $paidViewPoint = 1.00;
+  $yourFreeSurveys = format(4.00);
+  $paidViewPoint = format(1.00);
 
-  $surveyTotals = array_sum(array($yourFreeSurveys, $paidViewPoint));
-  $surveyTotals = number_format((float)$surveyTotals, 2, '.', '');
+  $surveyTotals = format(array_sum(array($yourFreeSurveys, $paidViewPoint)));
 
   // paid to click bonuses
-  $hits4pay = 5.00;
-  $dealsnCash = 5.00;
-  $quidsCorner = 0.25;
-  $upPaid = 0.10;
-  $cashMoneyEmail = 10.00;
-  $emailPaysU = 10.00;
-  $paid2YouTube = 0.05;
-  $clickVista = 0.25;
+  $hits4pay = format(5.00);
+  $dealsnCash = format(5.00);
+  $quidsCorner = format(0.25);
+  $upPaid = format(0.10);
+  $cashMoneyEmail = format(10.00);
+  $emailPaysU = format(10.00);
+  $paid2YouTube = format(0.05);
+  $clickVista = format(0.25);
 
-  $clickTotals = array_sum(array($hits4pay, $dealsnCash, $quidsCorner, $upPaid, $cashMoneyEmail, $emailPaysU, $paid2YouTube, $clickVista));
-  $clickTotals = number_format((float)$clickTotals, 2, '.', '');
+  $clickTotals = format(array_sum(array($hits4pay, $dealsnCash, $quidsCorner, $upPaid, $cashMoneyEmail, $emailPaysU, $paid2YouTube, $clickVista)));
 
   // add them all up...
-  $combinedTotals = array_sum(array($getPaidTotals, $clickTotals, $advertisingTotals, $affiliateTotals, $bankTotals, $gamingTotals, $fastTotals,
-                                    $shoppingTotals, $investmentTotals, $socialTotals, $socialTotals, $surveyTotals, $buxTotals));
-  $combinedTotals = number_format((float)$combinedTotals, 2, '.', '');
+  $combinedTotals = format(array_sum(array($getPaidTotals, $clickTotals, $advertisingTotals, $affiliateTotals, $bankTotals, $gamingTotals, $fastTotals,
+                                    $shoppingTotals, $investmentTotals, $socialTotals, $socialTotals, $surveyTotals, $buxTotals)));
 
 ?>

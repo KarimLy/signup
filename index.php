@@ -218,9 +218,11 @@ include('includes/header.php');
 
       </div>      
 
-      <p>Start building a list of followers today and don't hesitate to <a href="http://www.signupandmakemoney.com/contact/">contact us</a> if you have any questions.</p>
+      <p>Start building a list of followers today and don't hesitate to 
+        <a href="http://www.signupandmakemoney.com/contact/">contact us</a> if you have any questions.</p>
 
-      <p style="font-size:36px;line-height:50px;" align="center">Take a <a href="http://www.signupandmakemoney.com/webinar/" target="_blank">look at this webinar</a> to see how you can earn big commissions from the website you just made.</p>
+      <p style="font-size:36px;line-height:50px;" align="center">Take a 
+        <a href="http://www.signupandmakemoney.com/webinar/">look at this webinar</a> to see how you can earn big commissions from the website you just made.</p>
 
       <br /><br /></div></li>
       

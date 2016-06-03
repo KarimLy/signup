@@ -20,7 +20,7 @@
 	// referral links used in multiple places 
 	define('PANTHERA', 'http://stats.pantherainteractive.com/signup/4202');
 	define('CLIXSENSE', 'http://www.clixsense.com/?2251204');
-	define('EASYHITS4YU', 'http://www.easyhits4u.com/?ref=gdc25');
+	define('EASYHITS4U', 'http://www.easyhits4u.com/?ref=gdc25');
 	define('SURVEYSAVVY', 'http://www.surveysavvy.com/?m=2450703');
 	define('BIDVERTISER', 'http://www.bidvertiser.com/bdv/bidvertiser/bdv_ref.dbm?Ref_Option=adv&Ref_PID=118577');
 	define('INBOXDOLLARS', 'http://www.inboxdollars.com/?r=ref12218393&s=7');
