@@ -19,6 +19,15 @@
 
 	// referral links used in multiple places 
 	define('PANTHERA', 'http://stats.pantherainteractive.com/signup/4202');
+	define('CLIXSENSE', 'http://www.clixsense.com/?2251204');
+	define('EASYHITS4YU', 'http://www.easyhits4u.com/?ref=gdc25');
+	define('SURVEYSAVVY', 'http://www.surveysavvy.com/?m=2450703');
+	define('BIDVERTISER', 'http://www.bidvertiser.com/bdv/bidvertiser/bdv_ref.dbm?Ref_Option=adv&Ref_PID=118577');
+	define('INBOXDOLLARS', 'http://www.inboxdollars.com/?r=ref12218393&s=7');
+	define('UNIQUEREWARDS', 'http://www.uniquerewards.com/cgi-bin/main.cgi?cmd=newref&refid=9440');
+	define('SENDEARNINGS', 'http://www.sendearnings.com/?r=ref6734948&s=7');
+	define('SQUISHYCASH', 'http://www.squishycash.com/homepage?ref=gdc25');
+	define('HITS4PAY', 'http://hits4pay.com/members/index.cgi?gdc25');
 
 
 	// setup canonical...

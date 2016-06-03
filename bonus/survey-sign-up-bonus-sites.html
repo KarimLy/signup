@@ -32,9 +32,13 @@ include('../includes/header.php');
 
     <td class="left_advertising" valign="top" width="<?php echo R ?>%"><?php include ('../includes/leftsidebar.php'); ?></td>
 
-    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$15.00</span></p><h4>Best Survey Bonuses</h4>
+    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%">
+      <p>Total (USD) = <span class="totals">$<?php echo $surveyTotals ?></span></p>
+      <h4>Best Survey Bonuses</h4>
 
-    <div class="indent"><div id="hover-top" class="container">
+    <div class="indent">
+
+      <div id="hover-top" class="container">
 
             <div class="hover">
 
@@ -42,39 +46,16 @@ include('../includes/header.php');
 
             </div>
 
-            <div><a href="http://yourfreesurveys.com/?r=95456" target="_blank" title="Sign up with them and geta $4.00 bonus.">Your Free Surveys</a> = <span class="important_money">$4.00</span> <span class="notes">(USA only.)</span><br />
-
-            </div></div>
-
-
-
-<div id="hover-left" class="container">
-
-            <div class="hover">
-
-                <p>Survey Head has paid me!</p>
+            <div><a href="http://yourfreesurveys.com/?r=95456" target="_blank" title="Sign up with them and geta $<?php echo $yourFreeSurveys ?> bonus.">Your Free Surveys</a> = <span class="important_money">$<?php echo $yourFreeSurveys ?></span> <span class="notes">(USA only.)</span><br />
 
             </div>
-
-            <a href="http://partners.pantheranetwork.com/z/9244/CD8189/" target="_blank" title="Join Survey Head and get a $5.00 sign up bonus.">SurveyHead</a> = <span class="important_money">$5.00</span> <span class="notes">(USA only. <a href="javascript: surveyhead()" title="See comments from others about Survey Head and add your own." class="comment">Comments</a>.)</span>
-
-</div>
-
-            <div>
-
-          </div>
-
-          <a href="http://www.mb01.com/lnk.asp?o=3020&c=40826&a=21519" target="_blank" title="Join Only Cash Surveys and get a $5.00 sign up bonus.">Only Cash Surveys</a> = <span class="important_money">$5.00 </span><span class="notes">(USA only. <a href="javascript: onlycashsurveys()" title="See comments from others about Only Cash Surveys and add your own." class="comment">Comments</a>)</span><br />
-
+      </div>
           
-
-          <a href="http://paidviewpoint.com/?r=oo309s" target="_blank" title="Join Paid View Point and get about a $1.00 sign up bonus.">Paid View Point</a> = <span class="important_money">$1.00 </span><span class="notes">(They pay you as you fill out sign up form.)</span>
-
+          <a href="http://paidviewpoint.com/?r=oo309s" target="_blank" title="Join Paid View Point and get about a $<?php echo $paidViewPoint ?> sign up bonus.">Paid View Point</a> = <span class="important_money">$<?php echo $paidViewPoint ?></span><span class="notes"> (They pay you as you fill out sign up form.)</span>
           
+    </div>
 
-          </div>
-
-<p>Total (USD) = <span class="totals">$15.00</span></p>
+<p>Total (USD) = <span class="totals">$<?php echo $surveyTotals ?></span></p>
 
 <?php include ('../includes/banner.php'); ?>
 

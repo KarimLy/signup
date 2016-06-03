@@ -34,17 +34,19 @@ include('../includes/header.php');
 
     <td class="left_advertising" valign="top" width="<?php echo R ?>%"><?php include ('../includes/leftsidebar.php'); ?></td>
 
-    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$200.00</span></p>
+    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$<?php echo $gamingTotals ?></span></p>
 
     <h4>OK Gaming Bonuses</h4>
 
     <div class="indent">
 
-    <a href="http://www.scratch2cash.com/?AFI=3484&MMI=1683" target="_blank" title="Get a $200.00 sign up bonus from Scratch 2 Cash.">Scratch 2 Cash</a> = <span class="important_money">$200.00</span>
+    <a href="http://www.scratch2cash.com/?AFI=3484&MMI=1683" target="_blank" title="Get a $<?php echo $scratch2cash ?> sign up bonus from Scratch 2 Cash.">Scratch 2 Cash</a> = <span class="important_money">$<?php echo $scratch2cash ?></span>
 
     </div>
 
-  <p>Total (USD) = <span class="totals">$200.00</span></p><p class="title">These Casino bonus sites not included in overall totals:</p>
+  <p>Total (USD) = <span class="totals">$<?php echo $gamingTotals ?></span></p>
+
+  <p class="title">These Casino bonus sites not included in overall totals:</p>
 
   <div class="indent">
 
@@ -54,7 +56,7 @@ include('../includes/header.php');
 
   </div>
 
- <p class="title">These Casino bonus sites have unusually large bonuses:</p>
+ <p class="title">These Casino bonus sites have unusually large (unrealistic) bonuses:</p>
 
  <div class="indent">
 
