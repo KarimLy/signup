@@ -32,15 +32,15 @@ include('../includes/header.php');
 
     <td class="left_advertising" valign="top" width="<?php echo R ?>%"><?php include ('../includes/leftsidebar.php'); ?></td>
 
-    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$11.30</span></p>
+    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$<?php echo $buxTotals ?></span></p>
 
   <h4>OK bux Bonuses</h4>
 
   <div class="indent">
 
-  <a href="http://www.beanybux.com/?r=gdc25" target="_blank" title="Beany Bux 25 cent sign up bonus.">Beany Bux</a> = <span class="important_money">$0.25</span><br />
+    <a href="http://www.beanybux.com/?r=gdc25" target="_blank" title="Beany Bux $<?php echo $beanybux ?> cent sign up bonus.">Beany Bux</a> = <span class="important_money">$<?php echo $beanybux ?></span><br />
 
-  <a href="http://monsterbux.com/?r=signupmakemoney" target="_blank" title="Monster Bux $1.00 sign up bonus.">Monster Bux</a> = <span class="important_money">$1.00</span> <span class="notes">(<a href="javascript: monsterbux()" title="See comments from others about Monster Bux and add your own." class="comment">Comments</a>.)</span></div>
+  </div>
 
   <ul>  
 
@@ -48,17 +48,17 @@ include('../includes/header.php');
 
   <div class="faq-answer" id="faq-1">
 
-  <a href="http://BuxifY-V2.com/?r=gdc25" target="_blank" title="Buxify's $5.00 sign up bonus.">Buxify</a> = <span class="important_money">$5.00</span> <span class="notes">(must be a paid member to cash out)</span><br />
+  <a href="http://BuxifY-V2.com/?r=gdc25" target="_blank" title="Buxify's $<?php echo $buxify ?> sign up bonus.">Buxify</a> = <span class="important_money">$<?php echo $buxify ?></span> <span class="notes">(must be a paid member to cash out)</span><br />
 
-  <a href="http://www.10bux.net/?r=gdc25" target="_blank" title="10 Bux 5 cent sign up bonus.">10 Bux</a> = <span class="important_money">$0.05</span> <span class="notes">(<a href="javascript: tenbux()" title="See comments from others about 10 Bux and add your own." class="comment">Comments</a>. I've been waiting to get paid since NOV 2008.)</span><br />
+  <a href="http://www.10bux.net/?r=gdc25" target="_blank" title="10 Bux $<?php echo $tenbux ?> sign up bonus.">10 Bux</a> = <span class="important_money">$<?php echo $tenbux ?></span> <span class="notes">(<a href="javascript: tenbux()" title="See comments from others about 10 Bux and add your own." class="comment">Comments</a>. I've been waiting to get paid since NOV 2008.)</span><br />
 
-    <a href="http://buxjunction.com/?r=gdc25" target="_blank" title="Bux Junction $5.00 sign up bonus.">Bux Junction</a> = <span class="important_money">$5.00</span>
+    <a href="http://buxjunction.com/?r=gdc25" target="_blank" title="Bux Junction $<?php echo $buxjunction ?> sign up bonus.">Bux Junction</a> = <span class="important_money">$<?php echo $buxjunction ?></span>
 
     </div></li>
 
     </ul>
 
-  <p>Total (USD) = <span class="totals">$11.30</span></p>
+  <p>Total (USD) = <span class="totals">$<?php echo $buxTotals ?></span></p>
 
   <?php include ('../includes/banner.php'); ?>
 

@@ -22,7 +22,7 @@ include('../includes/header.php');
 
 <p>Be careful when dealing with cash back shopping sites. Make sure you know the terms on how much cash back you'll really be getting and know where and how to cancel your order if need be.</p>
 
-    <p>Make sure to download <a href="http://www.roboform.com/php/land.php?affid=gdc25&amp;frm=frame4" target="_blank" title="RoboForm.">RoboForm</a>, this will make it very easy to register with all the Companies!</p>
+<p>Make sure to download <a href="http://www.roboform.com/php/land.php?affid=gdc25&amp;frm=frame4" target="_blank" title="RoboForm.">RoboForm</a>, this will make it very easy to register with all the Companies!</p>
 
     <?php include ('../includes/notify.php'); ?>
 
@@ -34,15 +34,15 @@ include('../includes/header.php');
 
     <td class="left_advertising" valign="top" width="<?php echo R ?>%"><?php include ('../includes/leftsidebar.php'); ?></td>
 
-    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$12.50</span></p><h4>OK Cash back bonuses</h4>
+    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$<?php echo $shoppingTotals ?></span></p><h4>OK Cash back bonuses</h4>
 
-    <div class="indent"><a href="http://www.mrrebates.com?refid=315014" target="_blank" title="Get a $5.00 cash back shopping sign up bonus at Mr. Rebates.">Mr. Rebates</a> = <span class="important_money">$5.00</span> <span class="notes">(Cash back shopping.)</span><br />
+    <div class="indent">
 
-  <a href="http://www.ebates.com/rf.do?referrerid=R9Pf7rvyekPqNJYzjtddOg%3D%3D" target="_blank" title="Ebates $5.00 cash back shopping sign up bonus.">Ebates</a> = <span class="important_money">$5.00</span> <span class="notes">(Cash back shopping.)</span><br />
+      <a href="http://www.ebates.com/rf.do?referrerid=R9Pf7rvyekPqNJYzjtddOg%3D%3D" target="_blank" title="Ebates $<?php echo $ebates ?> cash back shopping sign up bonus.">Ebates</a> = <span class="important_money">$<?php echo $ebates ?></span> <span class="notes">(Cash back shopping.)</span><br />
 
-  <a href="http://www.points2shop.com/?ref=Quixon" target="_blank" title="Points 2 Shop 250 points or $2.50 Amazon cash equivalent sign up bonus.">Points 2 Shop</a> = <span class="important_money">$2.50</span> <span class="notes">(<a href="javascript: points2shop()" title="See comments from others about Points 2 Shop and add your own." class="comment">Comments</a>.)</span></div>  
+    </div>  
 
-  <p>Total (USD) = <span class="totals">$12.50</span></p>
+  <p>Total (USD) = <span class="totals">$<?php echo $shoppingTotals ?></span></p>
 
   <?php include ('../includes/banner.php'); ?>
 
@@ -59,4 +59,3 @@ include('../includes/header.php');
 	include('../includes/footer.php');
 
 ?>
-

@@ -1,26 +1,15 @@
 // JavaScript for faq page
 $(document).ready(function() {									
-
 	$("a[name^='faq-']").each(function() {
-
 		$(this).click(function() {
-
 			if( $("#" + this.name).is(':hidden') ) {
-
 				$("#" + this.name).toggle('slow');
-
 			} else {
-
 				$("#" + this.name).toggle('slow');
-
 			}			
-
 			return false;
-
 		});
-
 	});
-
 });
 
 // webinar ajax submission
@@ -86,21 +75,13 @@ $(document).ajaxStart(function(){
 // Checks the browser and adds classes to the body to reflect it.
 $(document).ready(function(){
 
-    
-
     var userAgent = navigator.userAgent.toLowerCase();
-
     $.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase()); 
-
-    
 
     // Is this a version of IE?
 
     if($.browser.msie){
-
         $('body').addClass('browserIE');
-
-        
 
         // Add the version number
 
@@ -108,311 +89,160 @@ $(document).ready(function(){
 
     }
 
-    
-
-    
-
     // Is this a version of Chrome?
 
     if($.browser.chrome){
-
     
-
-        $('body').addClass('browserChrome');
-
-        
+        $('body').addClass('browserChrome');    
 
         //Add the version number
 
         userAgent = userAgent.substring(userAgent.indexOf('chrome/') +7);
-
         userAgent = userAgent.substring(0,1);
-
         $('body').addClass('browserChrome' + userAgent);
-
-        
 
         // If it is chrome then jQuery thinks it's safari so we have to tell it it isn't
 
         $.browser.safari = false;
-
     }
-
-    
 
     // Is this a version of Safari?
 
     if($.browser.safari){
-
         $('body').addClass('browserSafari');
-
-        
 
         // Add the version number
 
         userAgent = userAgent.substring(userAgent.indexOf('version/') +8);
-
         userAgent = userAgent.substring(0,1);
-
         $('body').addClass('browserSafari' + userAgent);
-
     }
-
-    
 
     // Is this a version of Mozilla?
 
     if($.browser.mozilla){
 
-        
-
         //Is it Firefox?
 
         if(navigator.userAgent.toLowerCase().indexOf('firefox') != -1){
-
             $('body').addClass('browserFirefox');
 
-            
-
             // Add the version number
-
             userAgent = userAgent.substring(userAgent.indexOf('firefox/') +8);
-
             userAgent = userAgent.substring(0,1);
-
             $('body').addClass('browserFirefox' + userAgent);
-
         }
 
         // If not then it must be another Mozilla
-
         else{
-
             $('body').addClass('browserMozilla');
-
         }
-
     }
-
-    
 
     // Is this a version of Opera?
-
     if($.browser.opera){
-
         $('body').addClass('browserOpera');
-
-    }
-
-    
-
-    
+    }    
 
 });
 
-
-
 // tooltip code
-
-
-
 $(document).ready(function() {
-
         // Hover me at the top
-
         $("#hover-top").hover(function() {
-
             if ($(".hover", this).css("display") == "block") { return false; }
-
             os = $(this).offset();
-
             $("div.hover", this).css({top: os.top+"px", left: os.left-70+"px"}).animate({top: os.top-120+"px", opacity: "show"}, 750);
-
         },
-
         function() {
-
             os = $(this).offset();
-
             $(".hover", this).animate({top: os.top+"px", opacity: "hide"}, 500);
-
         });
-
-
 
         // Hover me to the side
-
         $("#hover-left").hover(function() {
-
             if ($(".hover", this).css("display") == "block") { return false; }
-
             os = $(this).offset();
-
             $(".hover", this).css({top: os.top-120+"px", left: os.left-30+"px"}).animate({left: os.left-70+"px", opacity: "show"}, 750);
-
         },
-
         function() {
-
             os = $(this).offset();
-
             $(".hover", this).animate({left: os.left+"px", opacity: "hide"}, 500);
-
         });
-
-		
 
 		// Hover me to the other side
-
         $("#hover-right").hover(function() {
-
             if ($(".hover", this).css("display") == "block") { return false; }
-
             os = $(this).offset();
-
             $(".hover", this).css({top: os.top-120+"px", left: os.left-30+"px"}).animate({left: os.left-70+"px", opacity: "show"}, 750);
 
         },
-
         function() {
-
             os = $(this).offset();
-
             $(".hover", this).animate({left: os.left+"px", opacity: "hide"}, 500);
-
         });
-
     });
 
-
-
 // audio player script
-
-
-
 var ap_instances = new Array();
-
-
-
 function ap_stopAll(playerID) {
-
 	for(var i = 0;i<ap_instances.length;i++) {
-
 		try {
-
 			if(ap_instances[i] != playerID) document.getElementById("audioplayer" + ap_instances[i].toString()).SetVariable("closePlayer", 1);
-
 			else document.getElementById("audioplayer" + ap_instances[i].toString()).SetVariable("closePlayer", 0);
-
 		} catch( errorObject ) {
-
 			// stop any errors
-
 		}
-
 	}
-
 }
 
-
-
 function ap_registerPlayers() {
-
 	var objectID;
-
 	var objectTags = document.getElementsByTagName("object");
-
 	for(var i=0;i<objectTags.length;i++) {
-
 		objectID = objectTags[i].id;
-
 		if(objectID.indexOf("audioplayer") == 0) {
-
 			ap_instances[i] = objectID.substring(11, objectID.length);
 
 		}
-
 	}
-
 }
-
-
-
 var ap_clearID = setInterval( ap_registerPlayers, 100 );
 
-
-
-
-
 // banner ads 
-
-
+const CLIXSENSE = 'http://www.clixsense.com/?2251204';
+const SENDEARNINGS = 'http://www.sendearnings.com/?r=ref6734948&s=7';
+const INBOXDOLLARS = 'http://www.inboxdollars.com/?r=ref12218393&s=7';
+const HITS4PAY = 'http://hits4pay.com/members/index.cgi?gdc25';
+const UNIQUEREWARDS ='http://www.uniquerewards.com/cgi-bin/main.cgi?cmd=newref&refid=9440';
+const SURVEYSAVVY = 'https://www.surveysavvy.com/?m=2450703';
 
 var smallbannerads = new Array()
 
-
-
-smallbannerads[0]='<a href="http://www.kerclink.com/AffTrack.htm?MID=110765" target="_blank"><img src="http://www.kerclink.com/Marketing/kbanner_250x250.jpg" alt="Get Paid To Have Fun At KERclink.com !" width="250" height="250" hspace="0" vspace="0" border="0" /></a>'
-
-smallbannerads[1]='<a href="http://www.mb01.com/lnk.asp?o=1766&c=26461&a=21519" target="_blank" style="background:none;"><img src="http://www.mb01.com/getimage.asp?m=1854&o=1766&i=26461.dat" alt="Fusion Cash - Get a $5.00 sign up bonus!" title="Join Fushion Cash and get a $5.00 sign up bonus." width="125" height="125" border="0" /></a>'
-
-smallbannerads[2]='<a href="http://www.clixsense.com/?2251204" target="_blank" style="background:none;"><img src="http://www.clixsense.com/Ad/clixsense4.gif" alt="Clixsense - Advertise for as little as $5.00" title="Join Clixsense for free." width="180" height="150" border="0" /></a>'
-
-smallbannerads[3]='<a href="http://www.mb01.com/lnk.asp?o=1744&c=25889&a=21519" target="_blank" style="background:none;"><img src="http://www.mb01.com/getimage.asp?m=1817&o=1744&i=25889.dat" alt="Your Free Surveys - Get paid for your opinions!" title="Join YourFreeSurveys and get a $4.00 sign up bonus." width="125" height="125" border="0" /></a>'
-
-smallbannerads[4]='<a href="http://www.gomezpeerzone.com/application-apply/?Referrer=gdc25" target="_blank"><img src="http://www.gomezpeerzone.com/wp-content/uploads/2011/11/125x125.gif" width="124" height="125" border="0"></a>'
-
-smallbannerads[5]='<a href="http://www.uniquerewards.com/cgi-bin/main.cgi?cmd=newref&refid=9440" target="_blank"><img src="http://www.uniquerewards.com/banners/ur_125x125_2.gif" border="0" width="125" height="125" alt="UniqueRewards"></a>'
-
-smallbannerads[6]='<a href="http://partners.pantheranetwork.com/z/48375/CD8189/" target="_blank"><img src="http://partners.pantheranetwork.com/42/8189/48375/" alt="Join Cash Crate today and get a $1.00 sign up bonus." border="0" /></a>'
-
-smallbannerads[7]='<a href="http://partners.pantheranetwork.com/z/10072/CD8189/" target="_blank"><img src="http://partners.pantheranetwork.com/42/8189/10072/" alt="Join the Panthera Network affiliate program for high payouts today." border="0" /></a>'
-
-smallbannerads[8]='<a href="http://www.mb01.com/lnk.asp?o=4729&c=55204&a=21519" target="_blank"><img src="http://www.mb01.com/getimage.asp?m=2762&o=4729&i=55204.dat" width="300" height="250" border="0"></a>'
-
-smallbannerads[9]='<a href="http://hits4pay.com/members/index.cgi?gdc25" target="_blank"><img border="0" src="http://hits4pay.com/imgn/banners/300x250.png" width="300" height="250"></a>'
-
-smallbannerads[10]='<a href="http://www.inboxdollars.com/?r=ref12218393" target="_blank"><img src="http://www.inboxdollars.com/graphics/creative/banners/250x250/250x250_2.gif" border="0" /></a>'
-
-smallbannerads[11]='<a href="http://www.sendearnings.com/?r=ref271274" target="_blank"><img src="http://www.sendearnings.com/graphics/creative/banners/300x250/300x250_2.jpg" border="0" /></a>'
-
-smallbannerads[12]='<a href="http://affiliate.irotracker.com/rd/r.php?sid=94&pub=301699&bid=372&c1=&c2=&c3=" target="_blank"><img src="http://ads.irotracker.com/rd/b.php?bid=372&sid=94&pub=301699" border="0" width="120" height="90" alt="Clip and Go Coupons"></a>'
-
-
+smallbannerads[0]='<a href="http://www.kerclink.com/AffTrack.htm?MID=110765" target="_blank"><img src="http://www.kerclink.com/Marketing/kbanner_250x250.jpg" alt="Get Paid To Have Fun At KERclink.com !" width="250" height="250" hspace="0" vspace="0" border="0" /></a>';
+smallbannerads[1]='<a href="'+CLIXSENSE+'" target="_blank" style="background:none;"><img src="http://www.clixsense.com/Ad/clixsense4.gif" alt="Clixsense - Advertise for as little as $5.00" title="Join Clixsense for free." width="180" height="150" border="0" /></a>';
+smallbannerads[2]='<a href="http://www.gomezpeerzone.com/application-apply/?Referrer=gdc25" target="_blank"><img src="http://www.gomezpeerzone.com/wp-content/uploads/2011/11/125x125.gif" width="124" height="125" border="0"></a>';
+smallbannerads[3]='<a href="'+UNIQUEREWARDS+'" target="_blank"><img src="http://www.uniquerewards.com/banners/ur_125x125_2.gif" border="0" width="125" height="125" alt="UniqueRewards"></a>';
+smallbannerads[4]='<a href="'+HITS4PAY+'" target="_blank"><img border="0" src="http://hits4pay.com/imgn/banners/300x250.png" width="300" height="250"></a>';
+smallbannerads[5]='<a href="'+INBOXDOLLARS+'" target="_blank"><img src="http://www.inboxdollars.com/graphics/creative/banners/250x250/250x250_2.gif" border="0" /></a>';
+smallbannerads[6]='<a href="'+SENDEARNINGS+'" target="_blank"><img src="http://www.sendearnings.com/graphics/creative/banners/300x250/300x250_2.jpg" border="0" /></a>';
 
 var smallchoosead=Math.floor(Math.random()*(smallbannerads.length))  
 
-
-
 var bottombannerads = new Array()
 
-
-
-bottombannerads[0]='<a href="http://hits4pay.com/members/index.cgi?gdc25" target="_blank"><img border="0" src="http://hits4pay.com/imgn/banners/468x60.png" width="468" height="60"></a>'
-
-bottombannerads[1]='<a href="http://www.inboxdollars.com/?r=ref12218393" target="_blank"><img src="http://www.inboxdollars.com/graphics/creative/banners/468x60/468x60_2.gif" border="0" /></a>'
-
-bottombannerads[2]='<a href="http://www.sendearnings.com/?r=ref271274" target="_blank"><img src="http://www.sendearnings.com/graphics/creative/banners/468x60/468x60_1.jpg" border="0" /></a>'
-
-bottombannerads[3]='<a href="http://www.gomezpeerzone.com/application-apply/?Referrer=gdc25" target="_blank"><img src="http://www.gomezpeerzone.com/wp-content/uploads/2011/11/468x60-static.gif" width="468" height="60" border="0"></a>'
-
-bottombannerads[4]='<a href="http://www.clixsense.com/?2251204" target="_blank"><img src="http://csstatic.com/banners/clixsense468x60g.png" border="0" /></a>'
-
-bottombannerads[5]='<a href="http://www.uniquerewards.com/cgi-bin/main.cgi?cmd=newref&refid=9440" target="_blank"><img src="http://www.uniquerewards.com/banners/ur_468x60_2.gif" border="0" width="468" height="60" alt="UniqueRewards - online rewards program"></a>'
-
-bottombannerads[6]='<a href="https://www.surveysavvy.com/?m=2450703" target="_blank"><img src="http://www.signupandmakemoney.com/Assets/affiliate/surveysavvy-banner468.jpg" border="0" width="468" height="60" alt="Survey Savvy" /></a>'
-
-bottombannerads[7]='<a href="http://www.signupandmakemoney.com/webinar/" target="_blank"><img src="http://www.signupandmakemoney.com/Assets/pws.jpg" border="0" width="468" height="60" alt="Secret Money Formular Webinar" /></a>'
-
-
+bottombannerads[0]='<a href="'+HITS4PAY+'" target="_blank"><img border="0" src="http://hits4pay.com/imgn/banners/468x60.png" width="468" height="60"></a>';
+bottombannerads[1]='<a href="'+INBOXDOLLARS+'" target="_blank"><img src="http://www.inboxdollars.com/graphics/creative/banners/468x60/468x60_2.gif" border="0" /></a>';
+bottombannerads[2]='<a href="'+SENDEARNINGS+'" target="_blank"><img src="http://www.sendearnings.com/graphics/creative/banners/468x60/468x60_1.jpg" border="0" /></a>';
+bottombannerads[3]='<a href="http://www.gomezpeerzone.com/application-apply/?Referrer=gdc25" target="_blank"><img src="http://www.gomezpeerzone.com/wp-content/uploads/2011/11/468x60-static.gif" width="468" height="60" border="0"></a>';
+bottombannerads[4]='<a href="'+CLIXSENSE+'" target="_blank"><img src="http://csstatic.com/banners/clixsense468x60g.png" border="0" /></a>';
+bottombannerads[5]='<a href="'+UNIQUEREWARDS+'" target="_blank"><img src="http://www.uniquerewards.com/banners/ur_468x60_2.gif" border="0" width="468" height="60" alt="UniqueRewards - online rewards program"></a>';
+bottombannerads[6]='<a href="'+SURVEYSAVVY+'" target="_blank"><img src="http://www.signupandmakemoney.com/Assets/affiliate/surveysavvy-banner468.jpg" border="0" width="468" height="60" alt="Survey Savvy" /></a>';
+bottombannerads[7]='<a href="http://www.signupandmakemoney.com/webinar/" target="_blank"><img src="http://www.signupandmakemoney.com/Assets/pws.jpg" border="0" width="468" height="60" alt="Secret Money Formular Webinar" /></a>';
 
 var bottomchoosead=Math.floor(Math.random()*(bottombannerads.length)) 
 
-
-
-// open in a new window script
-
-
+// open in a new window functions...
 
 function globalnpnproof(){window.open("http://www.signupandmakemoney.com/Assets/business-opportunity/npn-payment-proof.gif","mywindow","menubar=1,resizable=1,width=750,height=550,top=60,left=100");}
 
@@ -450,11 +280,7 @@ function panthera(){window.open("http://www.signupandmakemoney.com/blog/2009/03/
 
 function freeandpowerful(){window.open("http://www.signupandmakemoney.com/blog/2010/01/free-and-powerful-3-steps-to-a-50-00-sign-up-bonus/#comments","mywindow","menubar=1,resizable=yes,scrollbars=yes,width=1000,height=550,top=60,left=100");}
 
-function monsterbux(){window.open("http://www.signupandmakemoney.com/blog/2009/07/monster-bux-paid-to-click-community-sign-up-bonus/#comments","mywindow","menubar=1,resizable=yes,scrollbars=yes,width=1000,height=550,top=60,left=100");}
-
 function tenbux(){window.open("http://www.signupandmakemoney.com/blog/2009/02/10bux-pays-you-a-5-cent-sign-up-bonus-for-free/#comments","mywindow","menubar=1,resizable=yes,scrollbars=yes,width=1000,height=550,top=60,left=100");}
-
-function points2shop(){window.open("http://www.signupandmakemoney.com/blog/2009/10/earn-cash-back-sign-up-bonus-amazon-points2shop/#comments","mywindow","menubar=1,resizable=yes,scrollbars=yes,width=1000,height=550,top=60,left=100");}
 
 function cashcrate(){window.open("http://www.signupandmakemoney.com/blog/2009/04/cash-crate-gives-sign-up-bonus-after-filling-out-profile/#comments","mywindow","menubar=1,resizable=yes,scrollbars=yes,width=1000,height=550,top=60,left=100");}
 
