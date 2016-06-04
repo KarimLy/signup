@@ -106,26 +106,6 @@ var pageTracker = _gat._getTracker("UA-3173227-1");
 pageTracker._trackPageview();
 } catch(err) {}</script>
 
-<!-- ladesk -->
-<div id='laPlaceholder'></div> 
-<script type="text/javascript"> 
-(function(d,t) { 
-var script = d.createElement(t); script.id = 'la_x2s6df8d'; script.async = true; 
-script.src = '//jazztrumpetlicks.com/liveagent/scripts/track.js'; 
-var image = d.createElement('img'); script.async = true; 
-image.src = '//jazztrumpetlicks.com/liveagent/scripts/pix.gif'; 
-script.onload = script.onreadystatechange = function() { 
-var rs = this.readyState; if (rs && (rs != 'complete') && (rs != 'loaded')) return; 
-LiveAgentTracker.createButton('474cdf4a', this); 
-}; 
-var placeholder = document.getElementById('laPlaceholder'); 
-placeholder.parentNode.insertBefore(script, placeholder); 
-placeholder.parentNode.insertBefore(image, placeholder); 
-placeholder.parentNode.removeChild(placeholder); 
-})(document, 'script'); 
-</script>
-<!-- ladesk end -->
-
 </div> <!-- end footercontent tag -->
 </div> <!-- end footer tag -->
 
