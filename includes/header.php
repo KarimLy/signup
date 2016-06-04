@@ -11,9 +11,9 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo $script ?>"></script>
 
-  <?php if ($canonical !== 'http://www.signupandmakemoney.com/' || $canonical !== 'http://www.signupandmakemoney.com/traffic/') { ?>
+  <?php if ($section !== '' && $canonical !== 'http://www.signupandmakemoney.com/traffic/') { 
 
-    <script type="text/javascript">
+    echo '<script type="text/javascript">
 
     	// sticky
       $(function(){ // document ready
@@ -51,8 +51,9 @@
         }
     });
   });
-</script>
-<?php } ?>
+</script>'; 
+} ?>
+
 <meta name="p:domain_verify" content="23059e855c2df0203ac2e985d608f1ef"/>
 </head>
 
