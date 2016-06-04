@@ -234,7 +234,7 @@ var bottombannerads = new Array()
 bottombannerads[0]='<a href="'+HITS4PAY+'" target="_blank"><img border="0" src="http://hits4pay.com/imgn/banners/468x60.png" width="468" height="60"></a>';
 bottombannerads[1]='<a href="'+INBOXDOLLARS+'" target="_blank"><img src="http://www.inboxdollars.com/graphics/creative/banners/468x60/468x60_2.gif" border="0" /></a>';
 bottombannerads[2]='<a href="'+SENDEARNINGS+'" target="_blank"><img src="http://www.sendearnings.com/graphics/creative/banners/468x60/468x60_1.jpg" border="0" /></a>';
-bottombannerads[3]='<a href="http://www.gomezpeerzone.com/application-apply/?Referrer=gdc25" target="_blank"><img src="http://www.gomezpeerzone.com/wp-content/uploads/2011/11/468x60-static.gif" width="468" height="60" border="0"></a>';
+bottombannerads[3]='<a href="http://www.gomezpeerzone.com/application-apply/?Referrer=gdc25" target="_blank"><img src="http://www.signupandmakemoney.com/Assets/gomez-468x60.gif" width="468" height="60" border="0"></a>';
 bottombannerads[4]='<a href="'+CLIXSENSE+'" target="_blank"><img src="http://csstatic.com/banners/clixsense468x60g.png" border="0" /></a>';
 bottombannerads[5]='<a href="'+UNIQUEREWARDS+'" target="_blank"><img src="http://www.uniquerewards.com/banners/ur_468x60_2.gif" border="0" width="468" height="60" alt="UniqueRewards - online rewards program"></a>';
 bottombannerads[6]='<a href="'+SURVEYSAVVY+'" target="_blank"><img src="http://www.signupandmakemoney.com/Assets/affiliate/surveysavvy-banner468.jpg" border="0" width="468" height="60" alt="Survey Savvy" /></a>';
