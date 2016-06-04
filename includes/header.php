@@ -8,12 +8,12 @@
 	<link rel="canonical" href="<?php echo $canonical; ?>" />
 	<link href="<?php echo $styles ?>" rel="stylesheet" type="text/css" />
 	<link rel="shortcut icon" href="<?php echo $favicon ?>" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo $script ?>"></script>
 
-  <?php if ($canonical != 'http://www.signupandmakemoney.com/') {
+  <?php if ($canonical !== 'http://www.signupandmakemoney.com/' || $canonical !== 'http://www.signupandmakemoney.com/traffic/') { ?>
 
-  echo ' <script type="text/javascript">
+    <script type="text/javascript">
 
     	// sticky
       $(function(){ // document ready
@@ -26,49 +26,34 @@
         var stickyTop2Height = $(".ad2").height();
  
       $(window).scroll(function(){ // scroll event 
-
         var limit1 = $("#footer").offset().top - stickyTop1Height - 20;
         var limit2 = $("#footer").offset().top - stickyTop2Height - 20;
         var windowTop = $(window).scrollTop(); // returns number
 
-        if (stickyTop1 < windowTop) {
-
+        if (stickyTop1 < windowTop) 
           $(".ad1").css({ position: "fixed", top: 0 });
-
-        }
-        else {
-
+        else 
           $(".ad1").css("position","static");
 
-        }
-        if (stickyTop2 < windowTop) {
-
+        if (stickyTop2 < windowTop) 
           $(".ad2").css({ position: "fixed", top: 0 });
-
-        }
-        else {
-
+        else 
           $(".ad2").css("position","static");
-
-        }
+        
         if (limit1 < windowTop) {
-
           var diff = limit1 - windowTop + -20;
           el1.css({top: diff});
-
         }
-        if (limit2 < windowTop) {
 
+        if (limit2 < windowTop) {
           var diff = limit2 - windowTop + -20;
           el2.css({top: diff});
-
         }
+    });
   });
-});
-</script>'; } ?>
-
+</script>
+<?php } ?>
 <meta name="p:domain_verify" content="23059e855c2df0203ac2e985d608f1ef"/>
-
 </head>
 
 <body>
@@ -84,40 +69,40 @@
 
 <div id="top">
 
-<table style="margin: 0 auto;"><tr><td width="630px">
+  <table style="margin: 0 auto;"><tr><td width="630px">
 
-<div class="navtop">
+  <div class="navtop">
 
-  <ul> 
+    <ul> 
 
-    <li class="currentp"><a href="<?php echo URL ?>">Bonuses</a></li> 
-    <li><a href="<?php echo URL ?>site/affiliates/login.php">Affiliates</a></li>  
-    <li><a href="<?php echo URL ?>blog/">Blog</a></li>
-    <li><a href="<?php echo URL ?>traffic/">Traffic</a></li>
-    <li><a href="<?php echo URL ?>affiliate-tips/">Tips</a></li>
+      <li <?php if ($section == '' || $section == 'bonus' || $section == 'proofs') { echo 'class="currentp"'; } ?>>
+        <a href="<?php echo URL ?>">Bonuses</a></li> 
+      <li><a href="<?php echo URL ?>site/affiliates/login.php">Affiliates</a></li>  
+      <li><a href="<?php echo URL ?>blog/">Blog</a></li>
+      <li <?php if ($section == 'traffic') { echo 'class="currentp"'; } ?>><a href="<?php echo URL ?>traffic/">Traffic</a></li>
+      <li <?php if ($section == 'affiliate-tips' || $section == 'get-paid-to-sites' || $section == 'more-income') { echo 'class="currentp"'; } ?>>
+        <a href="<?php echo URL ?>affiliate-tips/">Tips</a></li>
 
-  </ul> </div></td><td width="330px">
+    </ul> </div></td><td width="330px">
 
-  <div class="search">
+    <div class="search">
 
-	<form action="http://www.signupandmakemoney.com/google-search/" id="cse-search-box">
+    	<form action="http://www.signupandmakemoney.com/google-search/" id="cse-search-box">
 
-    <input type="hidden" name="cx" value="partner-pub-0372492470050030:5vvp50-qsag" />
-    <input type="hidden" name="cof" value="FORID:10" />
-    <input type="hidden" name="ie" value="ISO-8859-1" />
-    <input type="text" name="q" size="30" />
-    <!-- input type="submit" name="sa" value="Search" / -->
+        <input type="hidden" name="cx" value="partner-pub-0372492470050030:5vvp50-qsag" />
+        <input type="hidden" name="cof" value="FORID:10" />
+        <input type="hidden" name="ie" value="ISO-8859-1" />
+        <input type="text" name="q" size="30" />
+        <!-- input type="submit" name="sa" value="Search" / -->
 
-  </form>
-  <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+      </form>
+      <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
 
-</div>	
+    </div>	
 
-</td>
-
-</tr>
-
-</table>
+  </td>
+  </tr>
+  </table>
 
 </div>
 
@@ -126,32 +111,56 @@
 <table width="100%" border="0" cellspacing="2" cellpadding="2" summary="table for header">
 
   <tr>
-
     <td class="header"><a href="http://www.signupandmakemoney.com/" style="background:none;">
       <img src="<?php echo URL ?>Assets/signupandmakemoney-logo-lg.jpg" border="0" alt="Signupandmakemoney Logo" 
       title="Signupandmakemoney." width="300" height="67" /></a></td>
-
     <td class="banner_right">
     
     <?php include ('hbanner.php'); ?> 
 
     </td>
-
   </tr>
-
 </table>
 
 <div id="tophmenu"></div>
-
 <div id="hmenu">
 
-<ul>
+  <ul>
 
-	<li><a href="<?php echo URL ?>#bonus">Sign up Bonuses</a></li>
-  <li><a href="<?php echo URL ?>site/affiliates/signup.php#SignupForm">Become an Affiliate</a></li>
-  <li><a href="<?php echo URL ?>proofs/">Payment Proofs</a></li>
+    <?php if ($section == '' || $section == 'bonus' || $section == 'proofs') { ?>
 
-</ul>
+    	<li><a href="<?php echo URL ?>#bonus">Sign up Bonuses</a></li>
+      <li><a href="<?php echo URL ?>site/affiliates/signup.php#SignupForm">Become an Affiliate</a></li>
+      <li><a href="<?php echo URL ?>proofs/">Payment Proofs</a></li>
+
+    <?php } else if ($section == 'traffic') { ?>
+
+      <li><a href="<?php echo URL ?>traffic/traffic-exchanges.html" title="Traffic Exchanges.">Exchanges</a></li>
+      <li><a href="<?php echo URL ?>traffic/advertising-resources.html" title="Traffic Resources.">Resources</a></li>
+      <li><a href="<?php echo URL ?>traffic/pay-per-click-sites.html" title="Pay Per Click Sites.">PPC</a></li>
+      <li><a href="<?php echo URL ?>traffic/downline-builders.html">Downline Builders</a></li>
+      <li><a href="<?php echo URL ?>traffic/search-engine-optimization.html" title="Search Engine Optimization.">SEO</a></li>
+
+    <?php } else if ($section == 'affiliate-tips' || $section == 'get-paid-to-sites' || $section == 'more-income') { ?>
+
+      <li><a href="<?php echo URL ?>more-income/" title="More ways to make money online.">More Money</a></li>
+      <li><a href="<?php echo URL ?>get-paid-to-sites/" title="Get Paid To Sites.">GPT Sites</a></li>
+      <li><a href="<?php echo URL ?>affiliate-tips/advertising/">Advertising</a></li>
+      <li><a href="<?php echo URL ?>affiliate-tips/build-website/">Web Design</a></li>
+      <li><a href="<?php echo URL ?>affiliate-tips/business-tips/">Business Stuff</a></li>
+
+    <?php } else { ?>
+
+      <li><a href="<?php echo URL ?>contact/">Contact</a></li>
+      <li><a href="<?php echo URL ?>info/faq.html">FAQ</a></li>
+      <li><a href="<?php echo URL ?>info/signupandmakemoney-instructions.html">Instructions</a></li>
+      <li><a href="<?php echo URL ?>info/earnings-disclaimer.html">Disclaimer</a></li>
+      <li><a href="<?php echo URL ?>info/privacy-policy.html">Privacy</a></li>
+      <li><a href="<?php echo URL ?>sitemap.html">Sitemap</a></li>
+
+    <?php } ?>
+
+  </ul>
 
 </div>
 
@@ -177,122 +186,3 @@ if ( ch_selected < ch_queries.length ) {
 }
 //--></script>
 <script  src="http://scripts.chitika.net/eminimalls/amm.js" type="text/javascript"></script>
-
-<?php
-
-  function format($num)
-  {
-    return number_format((float)$num, 2, '.', '');
-  }
-
-  // bonus defaults..
-  $getPaidTotals = 0.00; 
-  $clickTotals = 0.00; 
-  $advertisingTotals = 0.00; 
-  $affiliateTotals = 0.00; 
-  $bankTotals = 0.00; 
-  $gamingTotals = 0.00; 
-  $fastTotals = 0.00; 
-  $shoppingTotals = 0.00; 
-  $investmentTotals = 0.00;
-  $socialTotals = 0.00; 
-  $surveyTotals = 0.00; 
-  $buxTotals = 0.00;
-
-  // affiliate bonuses
-  $signupandmakemoney = format(2.00);
-  $domainIt = format(50.00);
-  $crocmint = format(50.00);
-  $panthera = format(150.00);
-  $ultraWebsiteHosting = format(5.00);
-  $cashBurners = format(50.00);
-  $idevdirect = format(25.00);
-  $songsurgeon = format(100.00);
-  $guitar1 = format(100.00);
-  $highprofits = format(20.00);
-  $advertyze = format(1.00);
-
-  $affiliateTotals = format(array_sum(array($signupandmakemoney, $domainIt, $crocmint, $panthera, $ultraWebsiteHosting, $cashBurners, $idevdirect,
-                                     $songsurgeon, $guitar1, $highprofits, $advertyze)));
-
-  // bank bonuses - none currently...
-  $bankTotals = format($bankTotals);
-
-  // bux bonuses
-  $beanybux = format(0.25);
-  $buxify = format(5.00);
-  $tenbux = format(0.05);
-  $buxjunction = format(5.00);
-
-  $buxTotals = format(floatval(array_sum(array($beanybux, $buxify, $tenbux, $buxjunction))));
-
-  // shopping bonuses
-  $ebates = format(10.00);
-
-  $shoppingTotals = format(array_sum(array($ebates)));
-
-  // fast bonuses
-  $signupandmakemoneyFast = format(0.05);
-  $clixsense = format(0.05);
-  $easyhits4u = format(0.05);
-  $surveySavvy = format(0.05);
-  $mammothList = format(1.00);
-
-  $fastTotals = format(array_sum(array($signupandmakemoneyFast, $clixsense, $easyhits4u, $surveySavvy, $mammothList)));
-
-  // advertising bonuses
-  $bidvertiser = format(20.00);
-  $bannersGoMLM = format(15.00);
-  $freeSafelistMailer = format(10.00);
-  $mySoloTrader = format(5.00);
-  $bannersGoMLM = format(15.00);
-
-  $advertisingTotals = format(array_sum(array($bidvertiser, $bannersGoMLM, $freeSafelistMailer, $mySoloTrader)));
-
-  // gaming bonuses
-  $scratch2cash = 200.00;
-
-  $gamingTotals = format(array_sum(array($scratch2cash)));
-
-  // get paid to bonuses
-  $inboxDollars = format(5.00);
-  $sendEarnings = format(5.00);
-  $uniqueRewards = format(5.00);
-  $cashCrate = format(1.00);
-  $squishyCash = format(3.00);
-  $treasureTrooper = format(1.00);
-  $getPaidToTry = format(25.00);
-  $sunshineRewards = format(5.00);
-
-  $getPaidTotals = format(array_sum(array($inboxDollars, $sendEarnings, $uniqueRewards, $cashCrate, $squishyCash, $treasureTrooper, $getPaidToTry, 
-                                          $sunshineRewards)));
-
-  // investment bonuses - none
-  $investmentTotals = format($investmentTotals);
-
-  // social bonuses - none
-  $socialTotals = format($socialTotals);
-
-  // survey bonuses
-  $yourFreeSurveys = format(4.00);
-  $paidViewPoint = format(1.00);
-
-  $surveyTotals = format(array_sum(array($yourFreeSurveys, $paidViewPoint)));
-
-  // paid to click bonuses
-  $hits4pay = format(5.00);
-  $dealsnCash = format(5.00);
-  $quidsCorner = format(0.25);
-  $upPaid = format(0.10);
-  $cashMoneyEmail = format(10.00);
-  $emailPaysU = format(10.00);
-  $paid2YouTube = format(0.05);
-  $clickVista = format(0.25);
-
-  $clickTotals = format(array_sum(array($hits4pay, $dealsnCash, $quidsCorner, $upPaid, $cashMoneyEmail, $emailPaysU, $paid2YouTube, $clickVista)));
-
-  // add them all up...
-  $combinedTotals = format(array_sum(array($getPaidTotals, $clickTotals, $advertisingTotals, $affiliateTotals, $bankTotals, $gamingTotals, $fastTotals,
-                                    $shoppingTotals, $investmentTotals, $socialTotals, $socialTotals, $surveyTotals, $buxTotals)));
-
-?>
