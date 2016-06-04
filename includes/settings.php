@@ -74,20 +74,20 @@
 	if ($canonical == URL . 'webinar/index.php')
 		$canonical = URL . 'webinar/';
 
-	function get1stDirectory($canonical) 
+    function getFirstDirectory($url)
     {
-        $urlParts = explode('/', str_ireplace(array('http://', 'https://'), '', $canonical));
+        $urlParts = explode('/', str_ireplace(array('http://', 'https://'), '', $url));
         return $urlParts[1];
-  	}
+    }
+
+    function format($num) 
+    {
+        return number_format((float)$num, 2, '.', '');
+    }
 
   	$section = get1stDirectory($canonical);
 
   	if ($section == '' || $section == 'bonus') {
-
-        function format($num) 
-        {
-            return number_format((float)$num, 2, '.', '');
-        }
 
         // bonus defaults..
         $getPaidTotals = 0.00; 
