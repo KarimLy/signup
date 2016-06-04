@@ -85,7 +85,7 @@
         return number_format((float)$num, 2, '.', '');
     }
 
-  	$section = get1stDirectory($canonical);
+  	$section = getFirstDirectory($canonical);
 
   	if ($section == '' || $section == 'bonus') {
 
