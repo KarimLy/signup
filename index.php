@@ -1,18 +1,18 @@
 <?php
 
-include('includes/settings.php');
+  include('includes/settings.php');
 
-$title = 'Get paid to sign up and make money online for free - make close to $1,000!';
-$description = 'Get paid to sign up! Make money with free survey sites. Get paid to click, shop, and read e-mails. Also get close to $1,000 and a potential 100,000 visitors for free!';
-$keywords = 'paid to click sites, paid to shop sites, survey sites, sign up free, get paid to signup, paid to read sites, fast signup bonus, payment proof';
-$styles = STYLE1;
-$favicon = FAV1;
-$script = SCRIPT1;
-$footer = 'Get paid to sign up on sites, make close to 1,000 dollars with FREE-to-JOIN Companies. Make extra money from home with free survey sites, 
-traffic sites, paid to click sites, paid to read sites, paid to shop sites, and business opportunity sites.  Learn how to make money online and 
-how to advertise online. Get over 100,000 potential visitors for free. Get paid to sign up and make money!';
+  $title = 'Get paid to sign up and make money online for free - make close to $1,000!';
+  $description = 'Get paid to sign up! Make money with free survey sites. Get paid to click, shop, and read e-mails. Also get close to $1,000 and a potential 100,000 visitors for free!';
+  $keywords = 'paid to click sites, paid to shop sites, survey sites, sign up free, get paid to signup, paid to read sites, fast signup bonus, payment proof';
+  $footer = 'Get paid to sign up on sites, make close to 1,000 dollars with FREE-to-JOIN Companies. Make extra money from home with free survey sites, 
+  traffic sites, paid to click sites, paid to read sites, paid to shop sites, and business opportunity sites.  Learn how to make money online and 
+  how to advertise online. Get over 100,000 potential visitors for free. Get paid to sign up and make money!';
+  $styles = STYLE1;
+  $favicon = FAV1;
+  $script = SCRIPT1;
 
-include('includes/header.php');
+  include('includes/header.php');
 
 ?>
 

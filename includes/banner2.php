@@ -1,3 +1,6 @@
-<script type="text/javascript"><!--
-document.write(bottombannerads[bottomchoosead])
-//--></script>
+<script type="text/javascript"><!--
+
+document.write(bottombannerads[bottomchoosead])
+
+//--></script>
+

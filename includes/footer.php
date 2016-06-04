@@ -1,11 +1,8 @@
-</div> <!-- closes the content tag -->
-
-</div> <!-- closes the wrapper tag -->
+</div> <!-- end content tag -->
+</div> <!-- end wrapper tag -->
 
 <div id="footer"> 
-
 <div id="footercontent">
-
 <p align="center">
 
 <?php 
@@ -37,7 +34,6 @@ echo $advert[0];
     <table width="100%" border="0" cellspacing="2" cellpadding="5" summary="Table for footer.">
 
   <tr>
-
     <td colspan="2" class="whitespace"><div align="center" style="padding-left:30px;"><br />
       <a href="http://www.signupandmakemoney.com/blog/feed/" target="_blank" title="Subscribe to the Signupandmakemoney RSS feed!">
         <img src="<?php echo URL ?>Assets/rss-large.jpg" alt="Signupandmakemoney RSS feed." width="100" height="100" border="0" style="padding-right:20px;" /></a>
@@ -60,34 +56,24 @@ echo $advert[0];
       <img src="http://feeds.feedburner.com/~fc/signupandmakemoney/haHu?bg=99CCFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0;" /></a></td></tr>
       <tr><td><br /><div align="center"><?php include ('banner2.php'); ?></div></td>
 
-    <td style="padding-left:15px;"><a class="addthis_button" href="http://addthis.com/bookmark.php?v=250&amp;pub=gdc25"><img src="http://s7.addthis.com/static/btn/v2/lg-bookmark-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0; padding-bottom:0px;margin-bottom:0px;"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=gdc25"></script><br /><br /><div id="google_translate_element"></div><script>
+    <td style="padding-left:15px;"><a class="addthis_button" href="http://addthis.com/bookmark.php?v=250&amp;pub=gdc25">
+      <img src="http://s7.addthis.com/static/btn/v2/lg-bookmark-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0; padding-bottom:0px;margin-bottom:0px;"/></a>
+      <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=gdc25"></script><br /><br /><div id="google_translate_element"></div><script>
 
 function googleTranslateElementInit() {
-
   new google.translate.TranslateElement({
-
     pageLanguage: 'en'
-
   }, 'google_translate_element');
-
 }
-
 </script><script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></td></tr></table><br />
 
     </div></td>
-
   </tr>
-
   <tr>
-
     <td colspan="2"><br /><br /><h3 align="center"><?php echo $footer; ?></h3>
-
     <br /><br /></td>
-
   </tr>
-
   <tr>
-
     <td width="50%"><div align="center" class="side">
 
     <ul>
@@ -102,94 +88,55 @@ function googleTranslateElementInit() {
     </ul>  
 
     </div></td>
-
-    <td width="50%" rowspan="2"><div align="center"><img src="<?php echo URL ?>Assets/signupandmakemoney-logo-lg-transparent.gif" alt="Signupandmakemoney Logo" width="300" height="67" /></div></td>
-
+    <td width="50%" rowspan="2">
+      <div align="center"><img src="<?php echo URL ?>Assets/signupandmakemoney-logo-lg-transparent.gif" alt="Signupandmakemoney Logo" width="300" height="67" /></div></td>
   </tr>
-
   <tr>
-
     <td><div align="center"><br /><br /><p>Copyright &copy; 2008 - <?php echo date('Y'); ?> Signupandmakemoney, LLC</p></div></td>
-
   </tr>
-
 </table>
 
 <script type="text/javascript">
-
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-
 </script>
-
 <script type="text/javascript">
-
 try {
-
 var pageTracker = _gat._getTracker("UA-3173227-1");
-
 pageTracker._trackPageview();
-
 } catch(err) {}</script>
 
 <!-- ladesk -->
-
 <div id='laPlaceholder'></div> 
-
 <script type="text/javascript"> 
-
 (function(d,t) { 
-
 var script = d.createElement(t); script.id = 'la_x2s6df8d'; script.async = true; 
-
 script.src = '//jazztrumpetlicks.com/liveagent/scripts/track.js'; 
-
 var image = d.createElement('img'); script.async = true; 
-
 image.src = '//jazztrumpetlicks.com/liveagent/scripts/pix.gif'; 
-
 script.onload = script.onreadystatechange = function() { 
-
 var rs = this.readyState; if (rs && (rs != 'complete') && (rs != 'loaded')) return; 
-
 LiveAgentTracker.createButton('474cdf4a', this); 
-
 }; 
-
 var placeholder = document.getElementById('laPlaceholder'); 
-
 placeholder.parentNode.insertBefore(script, placeholder); 
-
 placeholder.parentNode.insertBefore(image, placeholder); 
-
 placeholder.parentNode.removeChild(placeholder); 
-
 })(document, 'script'); 
-
 </script>
-
 <!-- ladesk end -->
 
-</div> <!-- closes the footercontent tag -->
-
-</div> <!-- closes the footer tag -->
+</div> <!-- end footercontent tag -->
+</div> <!-- end footer tag -->
 
 <!-- Kontera(TM);-->
-
 <script type="text/javascript">
-
 var dc_AdLinkColor = "blue"; 
-
 var dc_PublisherID = 61873; 
-
 </script>
-
 <script type="text/javascript" src="http://kona.kontera.com/javascript/lib/KonaLibInline.js"></script>
-
 <!-- end Kontera(TM) --> 
 
 </body>
-
 </html>
 
