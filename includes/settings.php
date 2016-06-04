@@ -74,14 +74,14 @@
 	if ($canonical == URL . 'webinar/index.php')
 		$canonical = URL . 'webinar/';
 
-	 function get1stDirectory($canonical) {
-      $urlParts = explode('/', str_ireplace(array('http://', 'https://'), '', $canonical));
-      return $urlParts[1];
-  	}
+    function get1stDirectory($canonical) {
+         $urlParts = explode('/', str_ireplace(array('http://', 'https://'), '', $canonical));
+      	 return $urlParts[1];
+    }
 
-  	$section = get1stDirectory($canonical);
+    $section = get1stDirectory($canonical);
 
-  	if ($section == '' || $section == 'bonus') {
+    if ($section == '' || $section == 'bonus') {
 
     function format($num) {
       return number_format((float)$num, 2, '.', '');
