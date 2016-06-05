@@ -48,7 +48,7 @@ if (!empty($_POST)) {
 		$response['phoneError'] = $errors['phone'];
 
 		header('Content-type: application/json; charset=utf-8');
-        echo json_encode($response);
+        	echo json_encode($response);
 
 	} else {
 
@@ -75,7 +75,7 @@ if (!empty($_POST)) {
 		mail($toEmail, $subject, $body, $headers);
 
 		header('Content-type: application/json; charset=utf-8');
-        echo json_encode($response);
+        	echo json_encode($response);
 	}
 }
 
