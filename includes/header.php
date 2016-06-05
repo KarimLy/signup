@@ -8,7 +8,7 @@
 	<link rel="canonical" href="<?php echo $canonical; ?>" />
 	<link href="<?php echo $styles ?>" rel="stylesheet" type="text/css" />
 	<link rel="shortcut icon" href="<?php echo $favicon ?>" />
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo $script ?>"></script>
 
   <?php if ($section !== '' && $canonical !== 'http://www.signupandmakemoney.com/traffic/') { ?>
@@ -53,7 +53,6 @@
   });
 </script>
 <?php } ?>
-
 <meta name="p:domain_verify" content="23059e855c2df0203ac2e985d608f1ef"/>
 </head>
 
@@ -114,7 +113,8 @@
   <tr>
     <td class="header"><a href="http://www.signupandmakemoney.com/" style="background:none;">
       <img src="<?php echo URL ?>Assets/signupandmakemoney-logo-lg.jpg" border="0" alt="Signupandmakemoney Logo" 
-      title="Signupandmakemoney." width="300" height="67" /></a></td>
+      title="Signupandmakemoney." width="300" height="67" /></a>
+    </td>
     <td class="banner_right">
     
     <?php include ('hbanner.php'); ?> 
@@ -130,7 +130,7 @@
 
     <?php if ($section == '' || $section == 'bonus' || $section == 'proofs') { ?>
 
-    	<li><a href="<?php echo URL ?>#bonus">Sign up Bonuses</a></li>
+      <li><a href="<?php echo URL ?>#bonus">Sign up Bonuses</a></li>
       <li><a href="<?php echo URL ?>site/affiliates/signup.php#SignupForm">Become an Affiliate</a></li>
       <li><a href="<?php echo URL ?>proofs/">Payment Proofs</a></li>
 
