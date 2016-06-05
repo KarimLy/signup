@@ -81,7 +81,7 @@ function googleTranslateElementInit() {
     	<li><a href="<?php echo URL ?>info/earnings-disclaimer.html">Earnings Disclaimer</a></li>
       <li><a href="<?php echo URL ?>info/privacy-policy.html">Privacy Policy</a></li>
       <li><a href="<?php echo URL ?>info/signupandmakemoney-instructions.html">Instructions</a></li>
-      <li><a href="<?php echo URL ?>sitemap.html">Sitemap</a></li>
+      <li><a href="<?php echo URL ?>info/sitemap.html">Sitemap</a></li>
    	  <li><a href="<?php echo URL ?>contact/">Contact</a></li>
       <li><a href="<?php echo URL ?>info/faq.html">FAQ</a></li>
 
