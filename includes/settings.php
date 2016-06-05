@@ -85,9 +85,9 @@
         return number_format((float)$num, 2, '.', '');
     }
 
-  	$section = getFirstDirectory($canonical);
+    $section = getFirstDirectory($canonical);
 
-  	if ($section == '' || $section == 'bonus') {
+    if ($section == '' || $section == 'bonus') {
 
         // bonus defaults..
         $getPaidTotals = 0.00; 
