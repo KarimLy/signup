@@ -63,9 +63,10 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=218261441523608";
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=223751357754052";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<!-- old fb app id = 218261441523608 -->
 
 <div id="top">
 
