@@ -109,14 +109,6 @@ pageTracker._trackPageview();
 </div> <!-- end footercontent tag -->
 </div> <!-- end footer tag -->
 
-<!-- Kontera(TM);-->
-<script type="text/javascript">
-var dc_AdLinkColor = "blue"; 
-var dc_PublisherID = 61873; 
-</script>
-<script type="text/javascript" src="http://kona.kontera.com/javascript/lib/KonaLibInline.js"></script>
-<!-- end Kontera(TM) --> 
-
 </body>
 </html>
 
