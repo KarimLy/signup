@@ -87,7 +87,7 @@
 
     $section = getFirstDirectory($canonical);
 
-    if ($section == '' || $section == 'bonus') {
+    if ($section == '' || $section == 'bonus' || $section == 'proofs') {
 
         // bonus defaults..
         $getPaidTotals = 0.00; 

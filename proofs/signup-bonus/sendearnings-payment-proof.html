@@ -1,37 +1,60 @@
-<?php
-include('../../includes/settings.php');
-$title = 'Sendearnings proof of payment.';
-$description = 'Sendearning proof of payment. Sign up with this excellent Company today and get a $5.00 sign up bonus.';
-$keywords = 'sendearnings, proof of payment, payment proof, international, usa';
-$styles = '../' . STYLE2;
-$favicon = '../' . FAV2;
-$script = '../' . SCRIPT2;
-$footer = 'Sign up with Send Earnings and get a five dollar sign up bonus. See payment proof above.';
-include('../../includes/header.php');
-?>
-<h1>Sendearnings Payment Proof</h1>
-
-<p>Sign up with Sendearnings, which is an excellent <a href="../../blog/category/get-paid-to-sites/">Get Paid To site</a> today and get a <span class="important_money">$5.00 sign up bonus</span>. Sendearnings is 100% free to join with great earning opportunities.</p>
-    <div align="center" class="proof"><table border="1" height="80px"><tr><td><p><img src="../../Assets/finger-pointing-at-proof-of-payment.jpg" align="left" hspace="5" alt="Finger pointing at a payment proof." title="Look at a proof of payment from Sendearnings." width="250" height="57" /></p>
-    </td>
-        <td><p align="center">A  <a href="javascript: sendearningsproof()" title="Payment proof I received from Sendearnings for $84.26.">payment I received from Sendearnings</a> for <span class="important_money">$84.26</span>.</p></td>
-    </tr></table></div>
-    <?php include ('../../includes/notify.php'); ?>
-  <hr />
-<table width="100%" border="0" cellspacing="3" cellpadding="3" summary="Table used for bonus sites and advertising.">
-  <tr>
-    <td class="left_advertising" valign="top" width="<?php echo R ?>%"><?php include ('../../includes/leftsidebar.php'); ?></td>
-    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$5.00</span></p>
-    
-  <a href="http://www.sendearnings.com/?r=ref271274" target="_blank" title="Sign up at SendEarnings here.">Send Earnings</a> = <span class="important_money">$5.00</span> <span class="notes">(<a href="javascript: sendearnings()" title="See comments from others about SendEarnings and add your own." class="comment">Comments</a>.)</span><br />
-  
-  <p>Total (USD) = <span class="totals">$5.00</span></p><?php include ('../../includes/banner.php'); ?>
-  <p style="padding-top:15px;"><div class="fb-comments" data-href="<?php echo $canonical; ?>" data-num-posts="5" data-width="400"></div></p>
-  </td>
-    <td class="right_advertising" valign="top" width="<?php echo L ?>%"><?php include ('../../includes/rightsidebar.php'); ?></td>
-  </tr>
-</table>
-
-<?php
-	include('../../includes/footer.php');
+<?php
+
+include('../../includes/settings.php');
+
+$title = 'Sendearnings proof of payment.';
+$description = 'Sendearning proof of payment. Sign up with this excellent Company today and get a $5.00 sign up bonus.';
+$keywords = 'sendearnings, proof of payment, payment proof, international, usa';
+$styles = '../' . STYLE2;
+$favicon = '../' . FAV2;
+$script = '../' . SCRIPT2;
+$footer = 'Sign up with Send Earnings and get a five dollar sign up bonus. See payment proof above.';
+
+include('../../includes/header.php');
+
+?>
+
+<h1>Sendearnings Payment Proof</h1>
+
+<p>Sign up with Sendearnings, which is an excellent <a href="../../blog/category/get-paid-to-sites/">Get Paid To site</a> today and get a <span class="important_money">$5.00 sign up bonus</span>. Sendearnings is 100% free to join with great earning opportunities.</p>
+
+    <div align="center" class="proof"><table border="1" height="80px"><tr><td><p><img src="../../Assets/finger-pointing-at-proof-of-payment.jpg" align="left" hspace="5" alt="Finger pointing at a payment proof." title="Look at a proof of payment from Sendearnings." width="250" height="57" /></p>
+
+    </td>
+
+        <td><p align="center">A  <a href="javascript: sendearningsproof()" title="Payment proof I received from Sendearnings for $84.26.">payment I received from Sendearnings</a> for <span class="important_money">$84.26</span>.</p></td>
+
+    </tr></table></div>
+
+    <?php include ('../../includes/notify.php'); ?>
+
+  <hr />
+
+<table width="100%" border="0" cellspacing="3" cellpadding="3" summary="Table used for bonus sites and advertising.">
+
+  <tr>
+
+    <td class="left_advertising" valign="top" width="<?php echo R ?>%"><?php include ('../../includes/leftsidebar.php'); ?></td>
+
+    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$<?php echo $sendEarnings ?></span></p>
+
+  
+  <a href="<?php echo SENDEARNINGS ?>" target="_blank" title="Sign up at SendEarnings and get a $<?php echo $sendEarnings ?> sign up bonus.">Send Earnings</a> = <span class="important_money">$<?php echo $sendEarnings ?></span> <span class="notes">(<a href="javascript: sendearnings()" title="See comments from others about SendEarnings and add your own." class="comment">Comments</a>.)</span><br />
+
+  <p>Total (USD) = <span class="totals">$<?php echo $sendEarnings ?></span></p><?php include ('../../includes/banner.php'); ?>
+
+  <p style="padding-top:15px;"><div class="fb-comments" data-href="<?php echo $canonical; ?>" data-num-posts="5" data-width="400"></div></p>
+
+  </td>
+
+    <td class="right_advertising" valign="top" width="<?php echo L ?>%"><?php include ('../../includes/rightsidebar.php'); ?></td>
+
+  </tr>
+
+</table>
+
+<?php
+
+	include('../../includes/footer.php');
+
 ?>
