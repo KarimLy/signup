@@ -56,39 +56,17 @@ a:hover {background:#ffc;}
 
 #you_tube {position:static;float:left;padding-right:35px;padding-bottom:15px;display:block}
 
+.ad1 {}
 
+.ad2 {}
 
-.ad1 {
-
-	
-
-}
-
-.ad2 {
-
-
-
-}
-
-
-
-.fwidth {
-
-	max-width: 350px;
-
-}
-
-
+.fwidth {max-width: 350px;}
 
 /* FAQ toggle */
-
-
 
 .faq-answer {display:none;padding-left:15px;}
 
 .big {font-size:20px;font-weight:bold;text-transform:uppercase;}
-
-
 
 .browserIE ul li {display:block;}
 
@@ -169,6 +147,10 @@ a:hover img {border: none; text-decoration:none; background:#ffffff;}
 .navtop ul li.currentp a {background: #161f23;color: #e8f0f3;-moz-border-radius:8px;-webkit-border-radius:8px;
 
 						  -opera-border-radius:8px;-khtml-border-radius:8px;border-radius:8px;}
+
+.subcurrentp a {background: #161f23;color: #e8f0f3;-moz-border-radius:8px;-webkit-border-radius:8px;
+
+						  -opera-border-radius:8px;-khtml-border-radius:8px;border-radius:8px;padding:4px;}
 
 .search {top:20px;}
 

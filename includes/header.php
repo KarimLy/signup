@@ -8,7 +8,7 @@
 	<link rel="canonical" href="<?php echo $canonical; ?>" />
 	<link href="<?php echo $styles ?>" rel="stylesheet" type="text/css" />
 	<link rel="shortcut icon" href="<?php echo $favicon ?>" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo $script ?>"></script>
 
   <?php if ($section !== '' && $canonical !== 'http://www.signupandmakemoney.com/traffic/') { ?>
@@ -131,34 +131,35 @@
 
     <?php if ($section == '' || $section == 'bonus' || $section == 'proofs') { ?>
 
-      <li><a href="<?php echo URL ?>#bonus">Sign up Bonuses</a></li>
+      <li <?php if ($section == 'bonus') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>#bonus">Sign up Bonuses</a></li>
+      <li <?php if ($section == 'proofs') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>proofs/">Payment Proofs</a></li>
       <li><a href="<?php echo URL ?>site/affiliates/signup.php#SignupForm">Become an Affiliate</a></li>
-      <li><a href="<?php echo URL ?>proofs/">Payment Proofs</a></li>
+      
 
     <?php } else if ($section == 'traffic') { ?>
 
-      <li><a href="<?php echo URL ?>traffic/traffic-exchanges.html" title="Traffic Exchanges.">Exchanges</a></li>
-      <li><a href="<?php echo URL ?>traffic/advertising-resources.html" title="Traffic Resources.">Resources</a></li>
-      <li><a href="<?php echo URL ?>traffic/pay-per-click-sites.html" title="Pay Per Click Sites.">PPC</a></li>
-      <li><a href="<?php echo URL ?>traffic/downline-builders.html">Downline Builders</a></li>
-      <li><a href="<?php echo URL ?>traffic/search-engine-optimization.html" title="Search Engine Optimization.">SEO</a></li>
+      <li <?php if ($page == '/traffic/traffic-exchanges.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>traffic/traffic-exchanges.html" title="Traffic Exchanges.">Exchanges</a></li>
+      <li <?php if ($page == '/traffic/advertising-resources.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>traffic/advertising-resources.html" title="Traffic Resources.">Resources</a></li>
+      <li <?php if ($page == '/traffic/pay-per-click-sites.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>traffic/pay-per-click-sites.html" title="Pay Per Click Sites.">PPC</a></li>
+      <li <?php if ($page == '/traffic/downline-builders.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>traffic/downline-builders.html">Downline Builders</a></li>
+      <li <?php if ($page == '/traffic/search-engine-optimization.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>traffic/search-engine-optimization.html" title="Search Engine Optimization.">SEO</a></li>
 
     <?php } else if ($section == 'affiliate-tips' || $section == 'get-paid-to-sites' || $section == 'more-income') { ?>
 
-      <li><a href="<?php echo URL ?>more-income/" title="More ways to make money online.">More Money</a></li>
-      <li><a href="<?php echo URL ?>get-paid-to-sites/" title="Get Paid To Sites.">GPT Sites</a></li>
-      <li><a href="<?php echo URL ?>affiliate-tips/advertising/">Advertising</a></li>
-      <li><a href="<?php echo URL ?>affiliate-tips/build-website/">Web Design</a></li>
-      <li><a href="<?php echo URL ?>affiliate-tips/business-tips/">Business Stuff</a></li>
+      <li <?php if ($section == 'more-income') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>more-income/" title="More ways to make money online.">More Money</a></li>
+      <li <?php if ($section == 'get-paid-to-sites') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>get-paid-to-sites/" title="Get Paid To Sites.">GPT Sites</a></li>
+      <li <?php if ($page == '/affiliate-tips/advertising/index.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>affiliate-tips/advertising/">Advertising</a></li>
+      <li <?php if ($page == '/affiliate-tips/build-website/index.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>affiliate-tips/build-website/">Web Design</a></li>
+      <li <?php if ($page == '/affiliate-tips/business-tips/index.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>affiliate-tips/business-tips/">Business Stuff</a></li>
 
     <?php } else { ?>
 
-      <li><a href="<?php echo URL ?>contact/">Contact</a></li>
-      <li><a href="<?php echo URL ?>info/faq.html">FAQ</a></li>
-      <li><a href="<?php echo URL ?>info/signupandmakemoney-instructions.html">Instructions</a></li>
-      <li><a href="<?php echo URL ?>info/earnings-disclaimer.html">Disclaimer</a></li>
-      <li><a href="<?php echo URL ?>info/privacy-policy.html">Privacy</a></li>
-      <li><a href="<?php echo URL ?>info/sitemap.html">Sitemap</a></li>
+      <li <?php if ($section == 'contact') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>contact/">Contact</a></li>
+      <li <?php if ($page == '/info/faq.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>info/faq.html">FAQ</a></li>
+      <li <?php if ($page == '/info/signupandmakemoney-instructions.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>info/signupandmakemoney-instructions.html">Instructions</a></li>
+      <li <?php if ($page == '/info/earnings-disclaimer.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>info/earnings-disclaimer.html">Disclaimer</a></li>
+      <li <?php if ($page == '/info/privacy-policy.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>info/privacy-policy.html">Privacy</a></li>
+      <li <?php if ($page == '/info/sitemap.html') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>info/sitemap.html">Sitemap</a></li>
 
     <?php } ?>
 
