@@ -78,7 +78,7 @@
 
       <li <?php if ($section == '' || $section == 'bonus' || $section == 'proofs') { echo 'class="currentp"'; } ?>>
         <a href="<?php echo URL ?>">Bonuses</a></li> 
-      <li><a href="<?php echo URL ?>site/affiliates/login.php">Affiliates</a></li>  
+      <li><a href="<?php echo URL ?>site/affiliates/login.php#login">Affiliates</a></li>  
       <li><a href="<?php echo URL ?>blog/">Blog</a></li>
       <li <?php if ($section == 'traffic') { echo 'class="currentp"'; } ?>><a href="<?php echo URL ?>traffic/">Traffic</a></li>
       <li <?php if ($section == 'affiliate-tips' || $section == 'get-paid-to-sites' || $section == 'more-income') { echo 'class="currentp"'; } ?>>
