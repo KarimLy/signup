@@ -139,7 +139,7 @@
 
     <?php if ($section == '' || $section == 'bonus' || $section == 'proofs') { ?>
 
-      <li <?php if ($section == 'bonus') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>#bonus">Sign up Bonuses</a></li>
+      <li <?php if ($section == 'bonus' || $section == '') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>#bonus">Sign up Bonuses</a></li>
       <li <?php if ($section == 'proofs') { echo 'class="subcurrentp"'; } ?>><a href="<?php echo URL ?>proofs/">Payment Proofs</a></li>
       <li><a href="<?php echo URL ?>site/affiliates/signup.php#SignupForm">Become an Affiliate</a></li>
       
