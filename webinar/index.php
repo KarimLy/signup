@@ -226,11 +226,11 @@ $favicon = '../Assets/transparent.ico';
       </td>
     </tr>
     <tr>
-      <td width="16%" class="webinarTd"><p id="nameError" class="errors"></p></td>
-      <td width="16%" class="webinarTd"><p id="emailError" class="errors"></p></td>
-      <td width="16%" class="webinarTd"><p id="phoneError" class="errors"></p></td>
-      <td width="16%" class="webinarTd"><p id="robotError" class="errors"></p></td>
-      <td width="12%" class="webinarTd"></td>
+      <td width="16%"><p id="nameError" class="errors"></p></td>
+      <td width="16%"><p id="emailError" class="errors"></p></td>
+      <td width="16%"><p id="phoneError" class="errors"></p></td>
+      <td width="16%"><p id="robotError" class="errors"></p></td>
+      <td width="12%"></td>
       <td width="8%"></td>
     </tr>
   </table>
