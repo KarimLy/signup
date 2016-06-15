@@ -20,6 +20,7 @@ $(document).ready(function(){
         $('#phoneError').empty();
         $('#emailError').empty();
         $('#nameError').empty();
+        $('#robotError').empty();
         var baseUrl = document.location.origin; 
 
         $.post(baseUrl + '/webinar/submit.php', $('form.webinar').serialize(), function(data){
@@ -33,6 +34,8 @@ $(document).ready(function(){
                     $('#emailError').html(data.emailError);
                 if (data.nameError !== null)
                     $('#nameError').html(data.nameError);
+                if (data.robotError !== null)
+                    $('#robotError').html(data.robotError);
             }
         }, 'json'); 
     });
