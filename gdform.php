@@ -1,7 +1,7 @@
 <?php
 
   if (empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest')
-    exit('<h1>Not a valid Ajax request...</h1>');
+    exit(header('Location: http://signupandmakemoney.com/info/ajax-error.html'));
 
   session_start();
 
