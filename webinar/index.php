@@ -187,30 +187,34 @@ $favicon = '../Assets/transparent.ico';
 <div id="loadingDiv"><img src="<?php echo URL ?>Assets/loading.gif" /></div>
 <div class="message"></div>
 <form method="POST" action="submit.php" class="webinar">
-  <table border="1" class="webinarTable">
+  <table border="0" class="webinarTable">
     <tr>
-      <td colspan="4">
+      <td colspan="6">
         <h1 class="webinarHeader">Fill out this form to be contacted about how to get started.</h1>
         <!-- Note: form action was: http://secretformulawebinar.net/getcd.php is was: id="mainForm" -->
       </td>
     </tr>
     <tr>
-      <td width="25%" class="webinarTd">
+      <td width="16%" class="webinarTd">
         <input type="text" name="fname" value="Name" id="fname" onfocus="if (this.value == 'Name') {this.value = '';}" 
               onblur="if (this.value == '') {this.value = 'Name';}">
-        <p id="nameError" class="errors"></p>
       </td>
-      <td width="25%" class="webinarTd">
+      <td width="16%" class="webinarTd">
         <input type="text" name="email" value="Email" id="email" onfocus="if (this.value == 'Email') {this.value = '';}" 
               onblur="if (this.value == '') {this.value = 'Email';}">
-        <p id="emailError" class="errors"></p>
       </td>
-      <td width="25%" class="webinarTd">
+      <td width="16%" class="webinarTd">
         <input type="text" name="phone" value="Phone" id="phone" onfocus="if (this.value == 'Phone') {this.value = '';}" 
               onblur="if (this.value == '') {this.value = 'Phone';}">
-        <p id="phoneError" class="errors"></p>
       </td>
-      <td width="25%">
+      <td width="16%" class="webinarTd">
+        <input type="text" name="norobot" id="norobot" value="Enter Captcha" onfocus="if (this.value == 'Enter Captcha') {this.value = '';}" 
+              onblur="if (this.value == '') {this.value = 'Enter Captcha';}" />
+        </td>
+        <td width="12%" class="webinarTd">
+          <img src="../captcha.php" style="padding:10px;" />
+        </td>
+      <td width="8%">
         <!-- past form hidden fields...
         <input type="hidden" name="redirect" value="http://www.signupandmakemoney.com/webinar/thanks.php">
         <input type="hidden" name="group" value="1">
@@ -220,6 +224,14 @@ $favicon = '../Assets/transparent.ico';
         -->
         <input type="submit" name="submit" id="submit" value="Submit">
       </td>
+    </tr>
+    <tr>
+      <td width="16%"><p id="nameError" class="errors"></p></td>
+      <td width="16%"><p id="emailError" class="errors"></p></td>
+      <td width="16%"><p id="phoneError" class="errors"></p></td>
+      <td width="16%"><p id="robotError" class="errors"></p></td>
+      <td width="12%"></td>
+      <td width="8%"></td>
     </tr>
   </table>
 </form>

@@ -32,7 +32,7 @@ include('../includes/header.php');
 
     <td class="left_advertising" valign="top" width="<?php echo R ?>%"><?php include ('../includes/leftsidebar.php'); ?></td>
 
-    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$79.55</span></p><h4>Best PTC bonuses</h4><div class="indent">
+    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$<?php echo $clickTotals ?></span></p><h4>Best PTC bonuses</h4><div class="indent">
 
     <div id="hover-top" class="container">
 
@@ -44,7 +44,7 @@ include('../includes/header.php');
 
             <div>
 
-  <a href="http://hits4pay.com/members/index.cgi?gdc25" target="_blank" title="Sign up and get a $5.00 bonus.">Hits 4 Pay</a> = <span class="important_money">$5.00</span><br /></div></div>
+  <a href="<?php echo HITS4PAY ?>" target="_blank" title="Sign up and get a $<?php echo $hits4pay ?> bonus.">Hits 4 Pay</a> = <span class="important_money">$<?php echo $hits4pay ?></span><br /></div></div>
 
   <div id="hover-left" class="container">
 
@@ -54,9 +54,9 @@ include('../includes/header.php');
 
             </div>
 
-            <div><a href="http://dealsncash.com/members/index.cgi?gdc25" target="_blank" title="Sign up and get a $5.00 bonus.">Deals N Cash</a> = <span class="important_money">$5.00</span><br /></div></div>
+            <div><a href="http://dealsncash.com/members/index.cgi?gdc25" target="_blank" title="Sign up and get a $<?php echo $dealsnCash ?> bonus.">Deals N Cash</a> = <span class="important_money">$<?php echo $dealsnCash ?></span><br /></div></div>
 
-  <div> <a href="http://www.clixsense.com/?2251204" target="_blank" title="Join Clixsense because it is the best.">Clixsense</a> = <span class="important_money">$0.00</span> <span class="notes"> (Paid multiple times, but no sign up bonus.)</span></div>
+  <div> <a href="<?php echo CLIXSENSE ?>" target="_blank" title="Join Clixsense because it is the best.">Clixsense</a> = <span class="important_money">$0.00</span> <span class="notes"> (Paid multiple times, but no sign up bonus.)</span></div>
 
   </div>
 
@@ -67,46 +67,31 @@ include('../includes/header.php');
     <div class="faq-answer" id="faq-1">
 
   
-  <a href="http://www.quidscorner.com/pages/index.php?refid=signupmakemoney" target="_blank" title="Join Quids Corner and get a 25 cent sign up bonus.">Quids Corner</a> = <span class="important_money">$0.25</span> <span class="notes">(USA, UK, and Canada only.)</span><br />
+  <a href="http://www.quidscorner.com/pages/index.php?refid=signupmakemoney" target="_blank" title="Join Quids Corner and get a $<?php echo $quidsCorner ?> sign up bonus.">Quids Corner</a> = <span class="important_money">$<?php echo $quidsCorner ?></span> <span class="notes">(USA, UK, and Canada only.)</span><br />
 
-   <a href="http://uppaid.com/pages/index.php?refid=signupmakemoney" target="_blank" title="Join Up Paid and get a 10 cent sign up bonus.">Up Paid</a> = <span class="important_money">$0.10</span><br />
-
-    <a href="http://www.paying4clicks.com/index.php?ref=signupmoney" target="_blank" title="Join Paying4Clicks and get a $10.00 sign up bonus.">Paying4Clicks</a> = <span class="important_money">$10.00</span><br />    
-
-     <a href="http://www.profitclicking.com/?r=gaux9cq3yb6" target="_blank" title="Join ProfitClicking and get a $10.00 sign up bonus.">Profit Clicking</a> = <span class="important_money">$10.00</span><br />
-
-  
-   <a href="http://eimimo.com/?ref=40566" target="_blank" title="Join Eimimo and get a $10.00 sign up bonus.">Eimimo</a> = <span class="important_money">$10.00</span>
+   <a href="http://uppaid.com/pages/index.php?refid=signupmakemoney" target="_blank" title="Join Up Paid and get a $<?php echo $upPaid ?> sign up bonus.">Up Paid</a> = <span class="important_money">$<?php echo $upPaid ?></span><br />
 
   </div></li>
 
      <li><a href="#" name="faq-2"><h4>Not Sure PTC bonuses</h4></a>
 
-     <div class="faq-answer" id="faq-2">
+     <div class="faq-answer" id="faq-2">     
 
-      <a href="http://cashnemail.com/members/index.cgi?gdc25" target="_blank" title="Join CashNEmail and get a $10.00 sign up bonus.">Cash N Email</a> = <span class="important_money">$10.00</span> <span class="notes">I had earnings, then they took it away from me???</span><br />
+      <a href="http://cashmoneyemail.com/members/index.cgi?gdc25" target="_blank" title="Join Cash Money Email and get a $<?php echo $cashMoneyEmail ?> sign up bonus.">Cash Money Email</a> = <span class="important_money">$<?php echo $cashMoneyEmail ?></span> <span class="notes"><br />Have earnings in account, but no payment option????</span><br />
 
-      <a href="http://amazingprofitreward.com/?ref=signupmoney" target="_blank" title="Join Amazing Profit Reward and get a $4.00 sign up bonus.">Amazing Profit Reward</a> = <span class="important_money">$4.00</span><br />      
+      <a href="http://www.e-mailpaysu.com/members/index.cgi?gdc25" target="_blank" title="Join Emailpaysu and get a $<?php echo $emailPaysU ?> sign up bonus.">Email Pays U</a> = <span class="important_money">$<?php echo $emailPaysU ?></span> <span class="notes">(<a href="javascript: emailpaysu()" title="See comments from others about EmailPaysU and add your own." class="comment">Comments</a>. <br />Have earnings, but no way to get paid??? <br />Contacted company multiple times but no response)</span><br />
 
-      <a href="http://cashmoneyemail.com/members/index.cgi?gdc25" target="_blank" title="Join Cash Money Email and get a $10.00 sign up bonus.">Cash Money Email</a> = <span class="important_money">$10.00</span> <span class="notes">Have earnings in account, but no payment option????</span><br />
+      <a href="http://www.paid2youtube.com/?r=rique" target="_blank" title="Join Paid 2 YouTube and get a $<?php echo $paid2YouTube ?> sign up bonus.">Paid 2 YouTube</a> = <span class="important_money">$<?php echo $paid2YouTube ?></span> <span class="notes">(Paid to watch videos. <a href="javascript: paid2youtube()" title="See comments from others about Paid 2 YouTube and add your own." class="comment">Comments</a>.)</span><br />
 
-      <a href="http://www.e-mailpaysu.com/members/index.cgi?gdc25" target="_blank" title="Join Emailpaysu and get a $10.00 sign up bonus.">Email Pays U</a> = <span class="important_money">$10.00</span> <span class="notes">(<a href="javascript: emailpaysu()" title="See comments from others about EmailPaysU and add your own." class="comment">Comments</a>. Have earnings, but no way to get paid??? Contacted Company multiple times and no response)</span><br />
-
-  <a href="http://www.paid2youtube.com/?r=rique" target="_blank" title="Join Paid 2 YouTube and get a 5 cent sign up bonus.">Paid 2 YouTube</a> = <span class="important_money">$0.05</span> <span class="notes">(Paid to watch videos. <a href="javascript: paid2youtube()" title="See comments from others about Paid 2 YouTube and add your own." class="comment">Comments</a>.)</span><br />
-
-  <a href="http://www.clicksvista.com/pages/index.php?refid=secretg" target="_blank" title="Join Clicks Vista and get a 25 cent sign up bonus.">Clicks Vista</a> = <span class="important_money">$0.25</span> <span class="notes">(<a href="javascript: clicksvista()" title="See comments from others about Clicks Vista and add your own." class="comment">Comments</a>.)</span>
+      <a href="http://www.clicksvista.com/pages/index.php?refid=secretg" target="_blank" title="Join Clicks Vista and get a $<?php echo $clickVista ?> sign up bonus.">Clicks Vista</a> = <span class="important_money">$<?php echo $clickVista ?></span> <span class="notes">(<a href="javascript: clicksvista()" title="See comments from others about Clicks Vista and add your own." class="comment">Comments</a>.)</span>
 
   </div></li>
 
   </ul>
 
-  <p>Total (USD) = <span class="totals">$79.55</span></p>
+  <p>Total (USD) = <span class="totals">$<?php echo $clickTotals ?></span></p>
 
-  <p class="title">These paid to click sites are not included in the overall totals:</p>
-
-  <div class="indent">
-
-  <a href="http://www.ProPaideMail.com/pages/index.php?refid=gdc25" target="_blank" title="Join Pro Paid Email and get a $50.00 sign up bonus.">Pro Paid Email</a> = <span class="important_money">$50.00</span> <span class="notes">(It's hard to earn just $10.00 with this site.)</span></div><p style="padding-top:15px;"><div class="fb-comments" data-href="<?php echo $canonical; ?>" data-num-posts="5" data-width="400"></div></p>
+  <p style="padding-top:15px;"><div class="fb-comments" data-href="<?php echo $canonical; ?>" data-num-posts="5" data-width="400"></div></p>
 
   </td>
 

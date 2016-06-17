@@ -5,13 +5,16 @@
 //	exit('<h1>Not a valid Ajax request...</h1>');
 
 if (empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest')
-	exit('<h1>Not a valid Ajax request...</h1>');
+	exit(header('Location: http://signupandmakemoney.com/info/ajax-error.html'));
+
+session_start();
 
 if (!empty($_POST)) {
 
 	$name = trim($_POST['fname']);
 	$email = trim($_POST['email']);
 	$phone = trim($_POST['phone']);
+	$robot = trim($_POST['norobot']);
 
 	$errors = array();
 
@@ -40,15 +43,25 @@ if (!empty($_POST)) {
 	else
 		$errors['phone'] = null;
 
-	if ($errors['name'] !== null || $errors['email'] !== null || $errors['phone'] !== null) {
+	if ($robot == '')
+      $errors['robot'] = 'The captcha field is required';
+    else if ($robot == 'Enter Captcha')
+      $errors['robot'] = 'The captcha field is required';
+    else if (md5($robot) !== $_SESSION['randomnr2'])
+      $errors['robot'] = 'The captcha field was incorrect';
+    else
+      $errors['robot'] = null;
+
+	if ($errors['name'] !== null || $errors['email'] !== null || $errors['phone'] !== null || $errors['robot'] !== null) {
 
 		$response['success'] = false;
 		$response['nameError'] = $errors['name'];
 		$response['emailError'] = $errors['email'];
 		$response['phoneError'] = $errors['phone'];
+		$response['robotError'] = $errors['robot'];
 
 		header('Content-type: application/json; charset=utf-8');
-        echo json_encode($response);
+        	echo json_encode($response);
 
 	} else {
 
@@ -75,7 +88,7 @@ if (!empty($_POST)) {
 		mail($toEmail, $subject, $body, $headers);
 
 		header('Content-type: application/json; charset=utf-8');
-        echo json_encode($response);
+        	echo json_encode($response);
 	}
 }
 

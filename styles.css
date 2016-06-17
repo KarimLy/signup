@@ -56,39 +56,17 @@ a:hover {background:#ffc;}
 
 #you_tube {position:static;float:left;padding-right:35px;padding-bottom:15px;display:block}
 
+.ad1 {}
 
+.ad2 {}
 
-.ad1 {
-
-	
-
-}
-
-.ad2 {
-
-
-
-}
-
-
-
-.fwidth {
-
-	max-width: 350px;
-
-}
-
-
+.fwidth {max-width: 350px;}
 
 /* FAQ toggle */
-
-
 
 .faq-answer {display:none;padding-left:15px;}
 
 .big {font-size:20px;font-weight:bold;text-transform:uppercase;}
-
-
 
 .browserIE ul li {display:block;}
 
@@ -170,6 +148,10 @@ a:hover img {border: none; text-decoration:none; background:#ffffff;}
 
 						  -opera-border-radius:8px;-khtml-border-radius:8px;border-radius:8px;}
 
+.subcurrentp a {background: #ffc;color: #26a;-moz-border-radius:8px;-webkit-border-radius:8px;
+
+						  -opera-border-radius:8px;-khtml-border-radius:8px;border-radius:8px;padding:4px;}
+
 .search {top:20px;}
 
 .search input {height:25px;}
@@ -184,7 +166,7 @@ a:hover img {border: none; text-decoration:none; background:#ffffff;}
 
 #tophmenu, #hmenu {background:url('Assets/border_h.png') repeat-x bottom;padding-top:10px;}
 
-p.errors {color: red}
+p.errors {color: red;text-align:left;margin-left:5px}
 
 div.message {text-align: center;font-size: 22px;font-family: sans-serif;margin-left: 15px;
 	display: inline-block;width: 95%;margin-top: 25px;width:800px}
@@ -202,9 +184,9 @@ div.success {padding: 22px;color: green;background-color: #ddd;border: 1px solid
 #email {padding:3px;margin-top:10px}
 #phone {padding:3px;margin-top:10px}
 #submit {margin-left:20px}
-.webinarHeader {margin-bottom:-5px;text-align:center}
+.webinarHeader {text-align:center}
 .webinarTd {text-align:center;padding:3px}
-.webinarTable {margin-top:5px}
+.webinarTable {margin-top:5px;width:925px}
 
 /* contact form specific items */
 #robotError {margin-top:2px}
