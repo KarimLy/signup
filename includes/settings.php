@@ -206,8 +206,30 @@
         $gotSafelistNum = 10000; 
         $gotSafelist = number_format($gotSafelistNum);
         $businessWorldList = number_format(200);
+        $myFreeSafelistNum = 3000;
+        $myFreeSafelist = number_format($myFreeSafelistNum);
+        $generalEndbNum = 25000;
+        $generalEndb = number_format($generalEndbNum);
 
-        $safelistTotals = number_format(array_sum(array($gotSafelistNum, $businessWorldList)));
+        $safelistTotals = number_format(array_sum(array($gotSafelistNum, $businessWorldList, $myFreeSafelistNum, $generalEndbNum)));
+
+        $smileyTrafficNum = 5050;
+        $smileyTraffic = number_format($smileyTrafficNum);
+        $topSurfer = number_format(100);
+        $stormSurfTrafficNum = 1000;
+        $stormSurfTraffic = number_format($smileyTrafficNum);
+        $classyClicks4uNum = 75000;
+        $classyClicks4u = number_format($classyClicks4uNum);
+        $zombieSurf = number_format(500);
+        $hotHitsNum = 5000;
+        $hotHits = number_format($hotHitsNum);
+
+        $trafficExchangeTotals = number_format(array_sum(array($smileyTrafficNum, $topSurfer, $smileyTrafficNum, $classyClicks4uNum, $zombieSurf, $hotHitsNum)));
+
+        $freeTrafficTotals = number_format(array_sum(array()));
+
+        //TODO fix this... Showing only first digits before 1st comma...
+        $combinedTrafficTotals = number_format(array_sum(array($safelistTotals, $trafficExchangeTotals, $freeTrafficTotals)));
 
     }
 
