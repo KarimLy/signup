@@ -201,4 +201,42 @@
 
     }
 
+    if ($section == 'traffic') {
+
+        $gotSafelistNum = 10000; 
+        $gotSafelist = number_format($gotSafelistNum);
+        $businessWorldList = 200;
+        $myFreeSafelistNum = 3000;
+        $myFreeSafelist = number_format($myFreeSafelistNum);
+        $generalEndbNum = 25000;
+        $generalEndb = number_format($generalEndbNum);
+
+        $safelistTotalsNum = array_sum(array($gotSafelistNum, $businessWorldList, $myFreeSafelistNum, $generalEndbNum));
+        $safelistTotals = number_format($safelistTotalsNum);
+
+        $smileyTrafficNum = 5050;
+        $smileyTraffic = number_format($smileyTrafficNum);
+        $topSurfer = 100;
+        $stormSurfTrafficNum = 1000;
+        $stormSurfTraffic = number_format($stormSurfTrafficNum);
+        $classyClicks4uNum = 75000;
+        $classyClicks4u = number_format($classyClicks4uNum);
+        $zombieSurf = 500;
+        $hotHitsNum = 5000;
+        $hotHits = number_format($hotHitsNum);
+
+        $trafficExchangeTotalsNum = array_sum(array($smileyTrafficNum, $topSurfer, $stormSurfTrafficNum, $classyClicks4uNum, $zombieSurf, $hotHitsNum));
+        $trafficExchangeTotals = number_format($trafficExchangeTotalsNum);
+
+        $trafficZoomNum = 15000;
+        $trafficZoom = number_format($trafficZoomNum);
+        $leadsLeap = 100;
+
+        $freeTrafficTotalsNum = array_sum(array($trafficZoomNum, $leadsLeap));
+        $freeTrafficTotals = number_format($freeTrafficTotalsNum);
+
+        $combinedTrafficTotals = number_format(array_sum(array($safelistTotalsNum, $trafficExchangeTotalsNum, $freeTrafficTotalsNum)));
+
+    }
+
 ?>
