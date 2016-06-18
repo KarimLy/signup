@@ -1,16 +1,16 @@
 <?php
 
-include('includes/settings.php');
+include('/home/content/***/**/**/***********/html/includes/settings.php');
 
 $title = '404 page for Signupandmakemoney.com.';
 $description = 'Page does not exist at Signupandmakemoney.com - 404 error.';
 $keywords = '404 page, 404 error, page does not exist';
-$styles = STYLE1;
-$favicon = FAV1;
-$script = SCRIPT1;
+$styles = URL . STYLE1;
+$favicon = URL . FAV1;
+$script = URL . SCRIPT1;
 $footer = 'The page you were looking for does not exist.';
 
-include('includes/header.php');
+include('/home/content/***/**/**/***********/html/includes/header.php');
 
 ?>
 
@@ -27,11 +27,11 @@ include('includes/header.php');
 </p>
 
   <p align="center">
-    <img src="http://www.signupandmakemoney.com/Assets/404-error.JPG" width="795" height="328" border="0" alt="404 error picture." title="Don't cry, try the navigation bar and maybe you'll find the page you're looking for." />
+    <img src="<?php echo URL ?>Assets/404-error.JPG" width="795" height="328" border="0" alt="404 error picture." title="Don't cry, try the navigation bar and maybe you'll find the page you're looking for." />
   </p>
 
 <?php
 
-  include('includes/footer.php');
+  include('/home/content/***/**/**/***********/html/includes/footer.php');
 
 ?>
