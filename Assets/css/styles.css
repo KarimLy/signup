@@ -118,7 +118,7 @@ h4 { font-size: 1em; }
 
 .container{width:245px;border:none;margin:0;}
 
-.hover{position:absolute;display:none;z-index:999;width:245px;height:108px;background:url(Assets/tooltip.png) no-repeat;}
+.hover{position:absolute;display:none;z-index:999;width:245px;height:108px;background:url(../tooltip.png) no-repeat;}
 
 .hover p{margin:1em;text-align:center}
 
@@ -164,7 +164,7 @@ a:hover img {border: none; text-decoration:none; background:#ffffff;}
 
 #hmenu ul li {font-size:1.2em;font-weight:bold;text-transform:uppercase;}	
 
-#tophmenu, #hmenu {background:url('Assets/border_h.png') repeat-x bottom;padding-top:10px;}
+#tophmenu, #hmenu {background:url('../border_h.png') repeat-x bottom;padding-top:10px;}
 
 p.errors {color: red;text-align:left;margin-left:5px}
 
