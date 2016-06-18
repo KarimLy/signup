@@ -1,16 +1,16 @@
 <?php
 
-include('../includes/settings.php');
+include('includes/settings.php');
 
 $title = '404 page for Signupandmakemoney.com.';
 $description = 'Page does not exist at Signupandmakemoney.com - 404 error.';
 $keywords = '404 page, 404 error, page does not exist';
-$styles = STYLE2;
-$favicon = FAV2;
-$script = SCRIPT2;
+$styles = STYLE1;
+$favicon = FAV1;
+$script = SCRIPT1;
 $footer = 'The page you were looking for does not exist.';
 
-include('../includes/header.php');
+include('includes/header.php');
 
 ?>
 
@@ -32,6 +32,6 @@ include('../includes/header.php');
 
 <?php
 
-  include('../includes/footer.php');
+  include('includes/footer.php');
 
 ?>
