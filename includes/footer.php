@@ -96,6 +96,21 @@ function googleTranslateElementInit() {
   </tr>
 </table>
 
+<?php if ($page == '/info/confirmsplash2.html') { ?>
+
+  <!-- PAP4 affiliate script -->
+  <script type="text/javascript">
+  document.write(unescape("%3Cscript id=%27pap_x2s6df8d%27 src=%27" + (("https:" == document.location.protocol) ? "https://" : "http://") + "www.signupandmakemoney.com/site/scripts/trackjs.js%27 type=%27text/javascript%27%3E%3C/script%3E")); 
+   </script> <script type="text/javascript">
+  PostAffTracker.setAccountId('default1');
+  var action = PostAffTracker.createAction('signupandmakemoney1');
+  action.setOrderID('ORD_12345XYZ');
+  action.setProductID('ORD_12345XYZ');
+  PostAffTracker.register();
+  </script>
+
+<?php } ?>
+
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

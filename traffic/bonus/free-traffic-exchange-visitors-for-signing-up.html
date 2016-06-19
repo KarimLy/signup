@@ -34,17 +34,15 @@ include('../../includes/header.php');
 
     <td class="left_advertising" valign="top" width="<?php echo R ?>%"><?php include ('../../includes/leftsidebar.php'); ?></td>
 
-    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total Visitors = <span class="totals">24,700</span></p>
+    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total Visitors = <span class="totals"><?php echo $trafficExchangeTotals ?></span></p>
 
     <h4>Best Traffic Exchange bonuses</h4>
 
     <div class="indent">
 
-   <a href="http://freetrafficbar.com/h/60010/" target="_blank" title="Join the Free Traffic Bar and get 1,000 free ads.">Free Traffic Bar</a> = <span class="important_money">1,000 ads</span><br />
+    <a href="http://www.smileytraffic.com/?rid=30479" target="_blank" title="Join Smiley Traffic and get <?php echo $smileyTraffic ?> traffic credits and impressions.">Smiley Traffic</a> = <span class="important_money"><?php echo $smileyTraffic ?> credits</span><br />
 
-   <a href="http://www.smileytraffic.com/?rid=30479" target="_blank" title="Join Smiley Traffic and get 50 visitors and 5,000 free impressions.">Smiley Traffic</a> = <span class="important_money">50 visitors</span><br />
-
-<a href="http://topsurfer.com/newuser.cgi?referer=gdc" target="_blank" title="Join Top Surfer and get 100 free credits.">Top Surfer</a> = <span class="important_money">100 credits</span>
+    <a href="http://topsurfer.com/newuser.cgi?referer=gdc" target="_blank" title="Join Top Surfer and get <?php echo $topSurfer ?> free credits.">Top Surfer</a> = <span class="important_money"><?php echo $topSurfer ?> credits</span>
 
 </div>
 
@@ -52,27 +50,17 @@ include('../../includes/header.php');
 
     <div class="indent">
 
-    <a href="http://www.stormsurftraffic.com/?ref=3586" target="_blank" title="Join Storm Surf Traffic and get 1,000 free credits.">Storm Surf Traffic</a> = <span class="important_money">1,000 credits</span><br />
+    <a href="http://www.stormsurftraffic.com/?ref=3586" target="_blank" title="Join Storm Surf Traffic and get <?php echo $stormSurfTraffic ?> free credits.">Storm Surf Traffic</a> = <span class="important_money"><?php echo $stormSurfTraffic ?> credits</span><br />
 
-    <a href="http://www.classy-clicks4u.com/index.php?referid=gdc25" target="_blank" title="Join Classy-Clicks4u and get 15,000 free points.">Classy-Clicks 4u</a> = <span class="important_money">15,000 points</span><br /><a href="http://www.traffic-co-op.com/signup.php?1667" target="_blank" title="Join Traffic-Co-Op and get 500 free credits.">Traffic-Co-Op</a> = <span class="important_money">50 credits</span><br />
+    <a href="http://www.classy-clicks4u.com/index.php?referid=gdc25" target="_blank" title="Join Classy-Clicks4u and get <?php echo $classyClicks4u ?> free credits.">Classy-Clicks 4u</a> = <span class="important_money"><?php echo $classyClicks4u ?> credits</span><br />
 
-    
+    <a href="http://www.zombiesurf.com/signup.php?1079" target="_blank" title="Join Zombie Surf and get <?php echo $zombieSurf ?> free advertising credits.">Zombie Surf</a> = <span class="important_money"><?php echo $zombieSurf ?> credits</span><br />
 
-   <a href="http://site.trafficcenter.com/?r=191469" target="_blank" title="Join the Traffic Center and get 2,000 free credits and 4,000 impressions.">Traffic Center</a> = <span class="important_money">2,000 credits</span><br />
-
-    <a href="http://www.zombiesurf.com/signup.php?1079" target="_blank" title="Join Zombie Surf and get 500 free advertising credits.">Zombie Surf</a> = <span class="important_money">500 credits</span><br />
-
-
-
-<a href="http://www.hot-hits.us?r=3471" target="_blank" title="Join Hot-Hits and get 5,000 free visitors to your site.">Hot-Hits</a> = <span class="important_money">5,000 visitors</span>
+    <a href="http://www.hot-hits.us?r=3471" target="_blank" title="Join Hot-Hits and get <?php echo $hotHits ?> free visitors to your site.">Hot-Hits</a> = <span class="important_money"><?php echo $hotHits ?> visitors</span>
 
 </div>
 
-
-
-<p>Total Visitors = <span class="totals">24,700</span></p>
-
-
+<p>Total Visitors = <span class="totals"><?php echo $trafficExchangeTotals ?></span></p>
 
 <p style="padding-top:15px;"><div class="fb-comments" data-href="<?php echo $canonical; ?>" data-num-posts="5" data-width="400"></div></p>
 
@@ -84,11 +72,8 @@ include('../../includes/header.php');
 
 </table>
 
-
-
 <?php
 
 	include('../../includes/footer.php');
 
 ?>
-

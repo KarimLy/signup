@@ -263,7 +263,11 @@
 	</url>
 	<url>
 	<loc>http://www.signupandmakemoney.com/info/sitemap.html</loc>
+<<<<<<< HEAD
 	<lastmod>2016-06-19</lastmod>
+=======
+	<lastmod>2016-06-17</lastmod>
+>>>>>>> master
 	<changefreq>monthly</changefreq>
 	<priority>0.2</priority>
 	</url>

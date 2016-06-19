@@ -34,25 +34,20 @@ include('../../includes/header.php');
 
     <td class="left_advertising" valign="top" width="<?php echo R ?>%"><?php include ('../../includes/leftsidebar.php'); ?></td>
 
-    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total Visitors = <span class="totals">65,100</span></p>
+    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total Visitors = <span class="totals"><?php echo $freeTrafficTotals ?></span></p>
 
     <h4>Best Traffic bonuses</h4>
 
     <div class="indent">
 
-    <a href="http://www.traffic-zoom.com/index.php?referid=signupandmakemoney" target="_blank" title="Join Traffic Zoom and get 15,000 free points.">Traffic Zoom</a> = <span class="important_money">15,000 points</span><br />
+        <a href="http://www.traffic-zoom.com/index.php?referid=signupandmakemoney" target="_blank" title="Join Traffic Zoom and get <?php echo $trafficZoom ?> free points.">Traffic Zoom</a> = <span class="important_money"><?php echo $trafficZoom ?> points</span><br />
 
-    <a href="http://www.leadsleap.com?referid=gdc25" target="_blank" title="Join Leads Leap and get 100 free advertising credits.">Leads Leap</a> = <span class="important_money">100 credits</span>
+        <a href="http://www.leadsleap.com?referid=gdc25" target="_blank" title="Join Leads Leap and get <?php echo $leadsLeap ?> free advertising credits.">Leads Leap</a> = <span class="important_money"><?php echo $leadsLeap ?> credits</span>
 
     </div>
 
-    <h4>OK Traffic bonuses</h4><div class="indent">
 
-<a href="http://web-dawg.com/members/index.cgi?gdc25" target="_blank" title="Join Web-Dawg and get 50,000 visitors and 1,000,000 banner impressions.">Web-Dawg</a> = <span class="important_money">50,000 visitors</span>
-
-</div>
-
-<p>Total Visitors = <span class="totals">65,100</span></p>
+<p>Total Visitors = <span class="totals"><?php echo $freeTrafficTotals ?></span></p>
 
 <p style="padding-top:15px;"><div class="fb-comments" data-href="<?php echo $canonical; ?>" data-num-posts="5" data-width="400"></div></p>
 
@@ -63,8 +58,6 @@ include('../../includes/header.php');
   </tr>
 
 </table>
-
-
 
 <?php
 

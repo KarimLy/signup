@@ -1,15 +1,5 @@
+Info: Signupandmakemoney.com
 
-# Contact info submission
+Things to do:
 
-url: signupandmakemoney.com/
-site_owner: Signupandmakemoney.com
-address1: 
-address2: 
-city: New Orleans
-state: LA
-country: US
-postal_code: 70142
-phone_number: 360-471-0874
-display_email: info@signupandmakemoney.com
-site_name: 
-site_description: 
+-None at the current moment. 

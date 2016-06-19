@@ -5,32 +5,52 @@ $title = 'Google Custom Search on Signupandmakemoney';
 $description = 'Search Google at Signupandmakemoney.com.';
 $keywords = 'google, custom search';
 $styles = STYLE2;
-$favicon = 'http://www.signupandmakemoney.com/Assets/transparent.ico';
+$favicon = URL . FAV2;
 $script = SCRIPT2;
 $footer = 'Thanks for letting Signupandmakemoney and Google help you find what you\'re looking for online today.';
 
 include('../includes/header.php');
 
+$cx = '';
+$q = '';
+
+if (isset($_GET['cx']))
+	$cx = $_GET['cx'];
+
+if (isset($_GET['q']))
+	$q = $_GET['q'];
+
 ?>
 
-<h1>Search</h1>
+<h1>Search <?php if ($q !== '') echo 'results for "' . $q . '"'; ?></h1>
 
-<div align="center">
+<?php 
 
-<div id="cse-search-results"></div>
-<script type="text/javascript">
-  var googleSearchIframeName = "cse-search-results";
-  var googleSearchFormName = "cse-search-box";
-  var googleSearchFrameWidth = 800;
-  var googleSearchDomain = "www.google.com";
-  var googleSearchPath = "/cse";
-</script>
-<script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
+	if ($cx == '' || $q == '')
 
-</div>
+		echo '<p>You did not type anything into the search box.</p>';
+
+	else { ?>
+
+		<div align="center">
+
+			<div id="cse-search-results"></div>
+			<script type="text/javascript">
+			  var googleSearchIframeName = "cse-search-results";
+			  var googleSearchFormName = "cse-search-box";
+			  var googleSearchFrameWidth = 900;
+			  var googleSearchFrameHeight = 1000;
+			  var googleSearchDomain = "www.google.com";
+			  var googleSearchPath = "/cse";
+			</script>
+			<script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
+
+		</div>
 
 <?php
 
+	}
+	
 	include('../includes/footer.php');
 
 ?>
