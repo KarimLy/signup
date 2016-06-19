@@ -3,7 +3,7 @@
 include('../../includes/settings.php');
 
 $title = 'Inboxdollars proof of payment.';
-$description = 'Inboxdollars proof of payment. Sign up with this excellent Company today and get a $5.00 sign up bonus.';
+$description = 'Inboxdollars proof of payment. Sign up with this excellent Company today and get a $'.$inboxDollars.' sign up bonus.';
 $keywords = 'inboxdollars, proof of payment, payment proof, international, usa';
 $styles = '../' . STYLE2;
 $favicon = '../' . FAV2;
@@ -36,7 +36,7 @@ include('../../includes/header.php');
 
     <td class="left_advertising" valign="top" width="<?php echo R ?>%"><?php include ('../../includes/leftsidebar.php'); ?></td>
 
-    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$5.00</span></p>
+    <td class="sign_up_sites" valign="top" width="<?php echo M ?>%"><p>Total (USD) = <span class="totals">$<?php echo $inboxDollars ?></span></p>
 
     <a href="<?php echo INBOXDOLLARS ?>" target="_blank" title="Join Inboxdollars here and get a $<?php echo $inboxDollars ?> sign up bonus.">Inboxdollars</a> = <span class="important_money">$<?php echo $inboxDollars ?></span> <span class="notes">(<a href="javascript: inboxdollars()" title="See comments from others about Inboxdollars and add your own." class="comment">Comments</a>.)</span><br />
 
