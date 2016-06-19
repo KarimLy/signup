@@ -263,7 +263,11 @@
 	</url>
 	<url>
 	<loc>http://www.signupandmakemoney.com/info/sitemap.html</loc>
+<<<<<<< HEAD
+	<lastmod>2016-06-19</lastmod>
+=======
 	<lastmod>2016-06-17</lastmod>
+>>>>>>> master
 	<changefreq>monthly</changefreq>
 	<priority>0.2</priority>
 	</url>
@@ -299,91 +303,55 @@
 	</url>
 	<url>
 	<loc>http://www.signupandmakemoney.com/proofs/signup-bonus/bux.to-payment-proof.html</loc>
-	<lastmod>2013-01-05</lastmod>
+	<lastmod>2016-06-19</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.2</priority>
 	</url>
 	<url>
 	<loc>http://www.signupandmakemoney.com/proofs/signup-bonus/dealsncash-payment-proof.html</loc>
-	<lastmod>2010-04-18</lastmod>
+	<lastmod>2016-06-19</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.2</priority>
 	</url>
 	<url>
 	<loc>http://www.signupandmakemoney.com/proofs/signup-bonus/hits4pay-payment-proof.html</loc>
-	<lastmod>2011-12-29</lastmod>
+	<lastmod>2016-06-19</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.2</priority>
 	</url>
 	<url>
 	<loc>http://www.signupandmakemoney.com/proofs/signup-bonus/inboxdollars-payment-proof.html</loc>
-	<lastmod>2016-06-12</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.2</priority>
-	</url>
-	<url>
-	<loc>http://www.signupandmakemoney.com/proofs/signup-bonus/obopay-payment-proof.html</loc>
-	<lastmod>2010-04-18</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.2</priority>
-	</url>
-	<url>
-	<loc>http://www.signupandmakemoney.com/proofs/signup-bonus/revolution-money-exchange-payment-proof.html</loc>
-	<lastmod>2010-04-18</lastmod>
+	<lastmod>2016-06-19</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.2</priority>
 	</url>
 	<url>
 	<loc>http://www.signupandmakemoney.com/proofs/signup-bonus/sendearnings-payment-proof.html</loc>
-	<lastmod>2016-06-12</lastmod>
+	<lastmod>2016-06-19</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.2</priority>
 	</url>
 	<url>
 	<loc>http://www.signupandmakemoney.com/proofs/signup-bonus/yourfreesurveys-payment-proof.html</loc>
-	<lastmod>2013-01-05</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.2</priority>
-	</url>
-	<url>
-	<loc>http://www.signupandmakemoney.com/proofs/survey/american-consumer-opinion-payment-proof.html</loc>
-	<lastmod>2010-04-18</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.2</priority>
-	</url>
-	<url>
-	<loc>http://www.signupandmakemoney.com/proofs/survey/i-think-payment-proof.html</loc>
-	<lastmod>2010-04-18</lastmod>
+	<lastmod>2016-06-19</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.2</priority>
 	</url>
 	<url>
 	<loc>http://www.signupandmakemoney.com/proofs/survey/myview-payment-proof.html</loc>
-	<lastmod>2013-01-05</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.2</priority>
-	</url>
-	<url>
-	<loc>http://www.signupandmakemoney.com/proofs/survey/survey-spot-payment-proof.html</loc>
-	<lastmod>2013-01-05</lastmod>
-	<changefreq>monthly</changefreq>
-	<priority>0.2</priority>
-	</url>
-	<url>
-	<loc>http://www.signupandmakemoney.com/proofs/survey/your-2-cents-payment-proof.html</loc>
-	<lastmod>2011-03-08</lastmod>
+	<lastmod>2016-06-19</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.2</priority>
 	</url>
 	<url>
 	<loc>http://www.signupandmakemoney.com/proofs/</loc>
-	<lastmod>2013-11-24</lastmod>
+	<lastmod>2016-06-19</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.5</priority>
 	</url>
 	<url>
 	<loc>http://www.signupandmakemoney.com/proofs/secret-shopping-payment-proofs.html</loc>
-	<lastmod>2010-04-18</lastmod>
+	<lastmod>2016-06-19</lastmod>
 	<changefreq>monthly</changefreq>
 	<priority>0.2</priority>
 	</url>
